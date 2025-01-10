@@ -43,15 +43,7 @@ export const FeaturesSection = () => {
   const templatesCount = templatesList.length;
 
   const features: Feature[] = [
-    { icon: <CurrencyDollarSimple />, title: t`Free, forever` },
-    { icon: <GitBranch />, title: t`Open Source` },
-    { icon: <Scales />, title: t`MIT License` },
-    { icon: <Prohibit />, title: t`No user tracking or advertising` },
-    { icon: <Cloud />, title: t`Self-host with Docker` },
-    { icon: <Translate />, title: t`Available in ${languagesCount} languages` },
     { icon: <Brain />, title: t`OpenAI Integration` },
-    { icon: <GithubLogo />, title: t`Sign in with GitHub` },
-    { icon: <GoogleLogo />, title: t`Sign in with Google` },
     { icon: <EnvelopeSimple />, title: t`Sign in with Email` },
     { icon: <Lock />, title: t`Secure with two-factor authentication` },
     { icon: <StackSimple />, title: t`${templatesCount} resume templates to choose from` },
@@ -64,38 +56,7 @@ export const FeaturesSection = () => {
     { icon: <Lock />, title: t`Lock a resume to prevent editing` },
     { icon: <File />, title: t`Supports A4/Letter page formats` },
     { icon: <TextAa />, title: t`Pick any font from Google Fonts` },
-    { icon: <GoogleChromeLogo />, title: t`Host your resume publicly` },
-    { icon: <Eye />, title: t`Track views and downloads` },
     { icon: <CloudSun />, title: t`Light or dark theme` },
-    {
-      icon: (
-        <div className="flex items-center space-x-1">
-          <img src="https://cdn.simpleicons.org/react" alt="React" width={14} height={14} />
-          <img src="https://cdn.simpleicons.org/vite" alt="Vite" width={14} height={14} />
-          <img
-            src="https://cdn.simpleicons.org/tailwindcss"
-            alt="TailwindCSS"
-            width={14}
-            height={14}
-          />
-          <img src="https://cdn.simpleicons.org/nestjs" alt="NestJS" width={14} height={14} />
-          <img
-            src="https://cdn.simpleicons.org/googlechrome"
-            alt="Google Chrome"
-            width={14}
-            height={14}
-          />
-          <img
-            src="https://cdn.simpleicons.org/postgresql"
-            alt="PostgreSQL"
-            width={14}
-            height={14}
-          />
-        </div>
-      ),
-      title: t`Powered by`,
-      className: "flex-row-reverse",
-    },
   ];
 
   return (
@@ -104,7 +65,7 @@ export const FeaturesSection = () => {
         <div className="space-y-6 leading-loose">
           <h2 className="text-4xl font-bold">{t`Rich in features, not in pricing.`}</h2>
           <p className="max-w-4xl text-base leading-relaxed">
-            {t`Reactive Resume is a passion project of over 3 years of hard work, and with that comes a number of re-iterated ideas and features that have been built to (near) perfection.`}
+            {t`ResumeU is a passion project of over 3 years of hard work, and with that comes a number of re-iterated ideas and features that have been built to (near) perfection.`}
           </p>
 
           <IconContext.Provider value={{ size: 14, weight: "bold" }}>

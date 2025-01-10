@@ -92,8 +92,8 @@ export const OpenAISettings = () => {
               obtain your own OpenAI API key
             </a>
             . This key empowers you to leverage the API as you see fit. Alternatively, if you wish
-            to disable the AI features in Reactive Resume altogether, you can simply remove the key
-            from your settings.
+            to disable the AI features in ResumeU altogether, you can simply remove the key from
+            your settings.
           </Trans>
         </p>
       </div>
@@ -132,7 +132,7 @@ export const OpenAISettings = () => {
               <FormItem>
                 <FormLabel>{t`Base URL`}</FormLabel>
                 <FormControl>
-                  <Input type="text" placeholder="http://localhost:11434/v1" {...field} />
+                  <Input type="text" placeholder="https://api.openai.com/v1" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -220,9 +220,9 @@ export const OpenAISettings = () => {
             >
               privacy policy
             </a>{" "}
-            outlined by OpenAI. Please note that Reactive Resume bears no responsibility for any
-            improper or unauthorized utilization of the service, and any resulting repercussions or
-            liabilities solely rest on the user.
+            outlined by OpenAI. Please note that ResumeU bears no responsibility for any improper or
+            unauthorized utilization of the service, and any resulting repercussions or liabilities
+            solely rest on the user.
           </Trans>
         </div>
       </Alert>

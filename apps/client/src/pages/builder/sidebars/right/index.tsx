@@ -2,16 +2,16 @@ import { t } from "@lingui/macro";
 import { ScrollArea, Separator } from "@reactive-resume/ui";
 import { useRef } from "react";
 
-import { Copyright } from "@/client/components/copyright";
+// import { Copyright } from "@/client/components/copyright";
 import { ThemeSwitch } from "@/client/components/theme-switch";
 
 import { ExportSection } from "./sections/export";
-import { InformationSection } from "./sections/information";
+// import { InformationSection } from "./sections/information";
 import { LayoutSection } from "./sections/layout";
-import { NotesSection } from "./sections/notes";
+// import { NotesSection } from "./sections/notes";
 import { PageSection } from "./sections/page";
 import { SharingSection } from "./sections/sharing";
-import { StatisticsSection } from "./sections/statistics";
+// import { StatisticsSection } from "./sections/statistics";
 import { TemplateSection } from "./sections/template";
 import { ThemeSection } from "./sections/theme";
 import { TypographySection } from "./sections/typography";
@@ -40,16 +40,10 @@ export const RightSidebar = () => {
           <PageSection />
           <Separator />
           <SharingSection />
-          <Separator />
-          <StatisticsSection />
+          {/* <Separator />
+          <StatisticsSection /> */}
           <Separator />
           <ExportSection />
-          <Separator />
-          <NotesSection />
-          <Separator />
-          <InformationSection />
-          <Separator />
-          <Copyright className="text-center" />
         </div>
       </ScrollArea>
 

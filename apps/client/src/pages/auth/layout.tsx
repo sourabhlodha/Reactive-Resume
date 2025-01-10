@@ -3,9 +3,7 @@ import { cn } from "@reactive-resume/utils";
 import { useMemo } from "react";
 import { Link, matchRoutes, Outlet, useLocation } from "react-router-dom";
 
-import { LocaleSwitch } from "@/client/components/locale-switch";
 import { Logo } from "@/client/components/logo";
-import { ThemeSwitch } from "@/client/components/theme-switch";
 import { useAuthProviders } from "@/client/services/auth/providers";
 
 import { SocialAuth } from "./_components/social-auth";
@@ -31,10 +29,10 @@ export const AuthLayout = () => {
             <Logo className="-ml-3" size={96} />
           </Link>
 
-          <div className="right-0 space-x-2 text-right lg:absolute lg:p-12 lg:text-center">
+          {/* <div className="right-0 space-x-2 text-right lg:absolute lg:p-12 lg:text-center">
             <LocaleSwitch />
             <ThemeSwitch />
-          </div>
+          </div> */}
         </div>
 
         <Outlet />

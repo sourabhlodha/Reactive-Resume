@@ -25,7 +25,7 @@ type Props = {
 };
 
 export const LocaleCombobox = ({ value, onValueChange }: Props) => {
-  const { languages } = useLanguages();
+  const languages = [{ name: "english", locale: "en" }];
   const [search, setSearch] = useState("");
 
   const options = useMemo(() => {

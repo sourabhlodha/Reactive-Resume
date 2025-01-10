@@ -16,7 +16,7 @@ type OpenAIStore = {
 export const useOpenAiStore = create<OpenAIStore>()(
   persist(
     (set) => ({
-      baseURL: null,
+      baseURL: "https://api.openai.com/v1",
       setBaseURL: (baseURL: string | null) => {
         set({ baseURL });
       },

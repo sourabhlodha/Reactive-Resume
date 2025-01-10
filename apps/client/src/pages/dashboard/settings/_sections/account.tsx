@@ -124,7 +124,7 @@ export const AccountSettings = () => {
                   <FormMessage />
                 </FormItem>
 
-                {!user.picture && (
+                {!user.picture && false && (
                   <>
                     <input ref={inputRef} hidden type="file" onChange={onSelectImage} />
 

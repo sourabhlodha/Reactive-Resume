@@ -1,3 +1,5 @@
+import { t } from "@lingui/macro";
+import { Plus } from "@phosphor-icons/react";
 import { sortByDate } from "@reactive-resume/utils";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -7,12 +9,17 @@ import { BaseListItem } from "./_components/base-item";
 import { CreateResumeListItem } from "./_components/create-item";
 import { ImportResumeListItem } from "./_components/import-item";
 import { ResumeListItem } from "./_components/resume-item";
+import { useNavigate } from "react-router-dom";
 
 export const ListView = () => {
   const { resumes, loading } = useResumes();
 
   return (
     <div className="grid gap-y-2">
+      <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }}>
+        <CreateJD />
+      </motion.div>
+
       <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }}>
         <CreateResumeListItem />
       </motion.div>
@@ -54,3 +61,21 @@ export const ListView = () => {
     </div>
   );
 };
+
+function CreateJD() {
+  const navigate = useNavigate();
+  return (
+    <BaseListItem
+      start={<Plus size={18} />}
+      title={
+        <>
+          <span>{t`Create a new Job Description`}</span>
+        </>
+      }
+      description={t`Start building from scratch on Job Description`}
+      onClick={() => {
+        navigate("/dashboard/jobdescription");
+      }}
+    />
+  );
+}
