@@ -14,8 +14,36 @@ Text: """{input}"""
 
 Revised Text: """`;
 
+const PROMPTJD = `You are an expert AI writing assistant specializing in crafting compelling and professional job descriptions. Your task is to create a detailed Job Description profile from the minimal data provided
+
+Text: """{input}"""
+
+Revised Text: ""`;
+
 export const improveWriting = async (text: string) => {
   const prompt = PROMPT.replace("{input}", text);
+
+  const { model, maxTokens } = useOpenAiStore.getState();
+
+  const result = await openai().chat.completions.create({
+    messages: [{ role: "user", content: prompt }],
+    model: model ?? DEFAULT_MODEL,
+    max_tokens: maxTokens ?? DEFAULT_MAX_TOKENS,
+    temperature: 0,
+    stop: ['"""'],
+    n: 1,
+  });
+
+  if (result.choices.length === 0) {
+    throw new Error(t`OpenAI did not return any choices for your text.`);
+  }
+
+  return result.choices[0].message.content ?? text;
+};
+
+export const createJobDescription = async (text: string) => {
+  const prompt = PROMPTJD.replace("{input}", text);
+  console.log(prompt, "prompt");
 
   const { model, maxTokens } = useOpenAiStore.getState();
 
