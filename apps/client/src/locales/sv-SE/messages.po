@@ -22,7 +22,7 @@ msgstr ""
 msgid "You have enabled two-factor authentication successfully."
 msgstr "Du har aktiverat tvåfaktorsautentisering utan problem."
 
-#: apps/client/src/pages/home/sections/features/index.tsx:57
+#: apps/client/src/pages/home/sections/features/index.tsx:49
 msgid "{templatesCount} resume templates to choose from"
 msgstr "{templatesCount} CV-mallar att välja mellan"
 
@@ -31,38 +31,59 @@ msgid "{value, plural, one {Column} other {Columns}}"
 msgstr "{value, plural, one {Kolumn} other {Kolumner}}"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:20
-msgid "<0>I built Reactive Resume mostly by myself during my spare time, with a lot of help from other great open-source contributors.</0><1>If you like the app and want to support keeping it free forever, please donate whatever you can afford to give.</1>"
-msgstr "<0>Jag byggde Reactive Resume mestadels själv på min fritid, med mycket hjälp från andra fantastiska bidragsgivare med öppen källkod.</0> <1>Om du gillar appen och vill stödja att hålla den gratis för alltid, vänligen donera vad du har råd att ge.</1>"
+#~ msgid "<0>I built Reactive Resume mostly by myself during my spare time, with a lot of help from other great open-source contributors.</0><1>If you like the app and want to support keeping it free forever, please donate whatever you can afford to give.</1>"
+#~ msgstr "<0>Jag byggde Reactive Resume mestadels själv på min fritid, med mycket hjälp från andra fantastiska bidragsgivare med öppen källkod.</0> <1>Om du gillar appen och vill stödja att hålla den gratis för alltid, vänligen donera vad du har råd att ge.</1>"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:20
+msgid "<0>I built ResumeU mostly by myself during my spare time, with a lot of help from other great open-source contributors.</0><1>If you like the app and want to support keeping it free forever, please donate whatever you can afford to give.</1>"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:51
 msgid "<0>I'm sure the app is not perfect, but I'd like for it to be.</0><1>If you faced any issues while creating your resume, or have an idea that would help you and other users in creating your resume more easily, drop an issue on the repository or send me an email about it.</1>"
 msgstr "<0>Jag är säker på att appen inte är perfekt, men jag vill att den ska vara det.</0> <1>Om du stötte på några problem när du skapade ditt CV, eller har en idé som skulle hjälpa dig och andra användare att skapa ditt CV enklare, släpp ett problem på repo:t eller skicka ett e-postmeddelande till mig om det.</1>"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:205
-msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that Reactive Resume bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
-msgstr "<0>Obs! </0>Genom att använda OpenAI API:et, godkänner och accepterar du <1>användarvillkoren</1> och <2>integritetspolicyn</2> som beskrivs av OpenAI. Observera att Reactive Resume inte bär något ansvar för felaktigt eller obehörigt utnyttjande av tjänsten, och eventuella återverkningar eller ansvar vilar enbart på användaren."
+#~ msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that Reactive Resume bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
+#~ msgstr "<0>Obs! </0>Genom att använda OpenAI API:et, godkänner och accepterar du <1>användarvillkoren</1> och <2>integritetspolicyn</2> som beskrivs av OpenAI. Observera att Reactive Resume inte bär något ansvar för felaktigt eller obehörigt utnyttjande av tjänsten, och eventuella återverkningar eller ansvar vilar enbart på användaren."
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:205
+msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that ResumeU bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:85
-msgid "<0>The community has spent a lot of time writing the documentation for Reactive Resume, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
-msgstr "<0>Gemenskapen har lagt ner mycket tid på att skriva dokumentationen för Reactive Resume, och jag är säker på att det kommer att hjälpa dig att komma igång med appen.</0> <1>Det finns också många exempel som hjälper dig att komma igång, och funktioner som du kanske inte känner till som kan hjälpa dig att bygga ditt perfekta CV.</1>"
+#~ msgid "<0>The community has spent a lot of time writing the documentation for Reactive Resume, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
+#~ msgstr "<0>Gemenskapen har lagt ner mycket tid på att skriva dokumentationen för Reactive Resume, och jag är säker på att det kommer att hjälpa dig att komma igång med appen.</0> <1>Det finns också många exempel som hjälper dig att komma igång, och funktioner som du kanske inte känner till som kan hjälpa dig att bygga ditt perfekta CV.</1>"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:85
+msgid "<0>The community has spent a lot of time writing the documentation for ResumeU, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
+msgstr ""
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:146
-msgid "<0>Two-factor authentication is currently disabled.</0> You can enable it by adding an authenticator app to your account."
-msgstr "<0>Tvåfaktorsautentisering är för närvarande inaktiverad.</0> Du kan aktivera det genom att lägga till en autentiseringsapp till ditt konto."
+#~ msgid "<0>Two-factor authentication is currently disabled.</0> You can enable it by adding an authenticator app to your account."
+#~ msgstr "<0>Tvåfaktorsautentisering är för närvarande inaktiverad.</0> Du kan aktivera det genom att lägga till en autentiseringsapp till ditt konto."
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:139
-msgid "<0>Two-factor authentication is enabled.</0> You will be asked to enter a code every time you sign in."
-msgstr "<0>Tvåfaktorsautentisering är aktiverad.</0> Du kommer att bli ombedd att ange en kod varje gång du loggar in."
+#~ msgid "<0>Two-factor authentication is enabled.</0> You will be asked to enter a code every time you sign in."
+#~ msgstr "<0>Tvåfaktorsautentisering är aktiverad.</0> Du kommer att bli ombedd att ange en kod varje gång du loggar in."
 
 #: apps/client/src/pages/home/page.tsx:24
 #: apps/client/src/pages/home/sections/hero/index.tsx:40
-msgid "A free and open-source resume builder"
-msgstr "En gratis CV-byggare med öppen källkod"
+#~ msgid "A free and open-source resume builder"
+#~ msgstr "En gratis CV-byggare med öppen källkod"
 
 #: apps/client/src/pages/home/components/footer.tsx:21
 #: apps/client/src/pages/home/sections/hero/index.tsx:45
-msgid "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
-msgstr "En gratis CV-byggare med öppen källkod som förenklar processen med att skapa, uppdatera och dela ditt CV."
+#~ msgid "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
+#~ msgstr "En gratis CV-byggare med öppen källkod som förenklar processen med att skapa, uppdatera och dela ditt CV."
+
+#: apps/client/src/pages/home/sections/hero/index.tsx:24
+msgid "A free resume builder"
+msgstr ""
+
+#: apps/client/src/pages/home/components/footer.tsx:19
+#: apps/client/src/pages/home/sections/hero/index.tsx:28
+msgid "A free resume builder that simplifies the process of creating, updating, and sharing your resume."
+msgstr ""
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:53
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:29
@@ -70,8 +91,8 @@ msgid "A link has been copied to your clipboard."
 msgstr "En länk har kopierats till ditt urklipp."
 
 #: apps/client/src/components/copyright.tsx:29
-msgid "A passion project by <0>Amruth Pillai</0>"
-msgstr "Ett passionsprojekt av <0>Amruth Pillai</0>"
+#~ msgid "A passion project by <0>Amruth Pillai</0>"
+#~ msgstr "Ett passionsprojekt av <0>Amruth Pillai</0>"
 
 #: apps/client/src/pages/auth/forgot-password/page.tsx:57
 msgid "A password reset link should have been sent to your inbox, if an account existed with the email you provided."
@@ -90,7 +111,7 @@ msgid "A4"
 msgstr "A4"
 
 #. Helper text to let the user know what filetypes are accepted. {accept} can be .pdf or .json.
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:272
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:268
 msgid "Accepts only {accept} files"
 msgstr "Accepterar endast {accept} filer"
 
@@ -133,7 +154,7 @@ msgstr "Har du redan ett konto?"
 msgid "An error occurred while validating the file."
 msgstr "Ett fel inträffade när filen validerades."
 
-#: apps/client/src/pages/home/sections/features/index.tsx:134
+#: apps/client/src/pages/home/sections/features/index.tsx:95
 msgid "and many more..."
 msgstr "och många fler..."
 
@@ -180,8 +201,8 @@ msgid "Aspect Ratio"
 msgstr "Bildförhållande"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:51
-msgid "Available in {languagesCount} languages"
-msgstr "Tillgänglig på {languagesCount} språk"
+#~ msgid "Available in {languagesCount} languages"
+#~ msgstr "Tillgänglig på {languagesCount} språk"
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:53
 msgid "Awarder"
@@ -232,8 +253,8 @@ msgstr "Byggt med"
 
 #: apps/client/src/components/copyright.tsx:27
 #: apps/client/src/pages/home/sections/contributors/index.tsx:20
-msgid "By the community, for the community."
-msgstr "Av gemenskapen, för gemenskapen."
+#~ msgid "By the community, for the community."
+#~ msgstr "Av gemenskapen, för gemenskapen."
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:131
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:49
@@ -332,11 +353,23 @@ msgstr "Skapa ett nytt konto"
 msgid "Create a new item"
 msgstr "Skapa ett nytt objekt"
 
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/create-jd-card.tsx:28
+msgid "Create a new job description"
+msgstr ""
+
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/index.tsx:72
+msgid "Create a new Job Description"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:176
 #: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/create-card.tsx:28
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/create-item.tsx:18
 msgid "Create a new resume"
 msgstr "Skapa ett nytt CV"
+
+#: apps/client/src/pages/dashboard/jobdescription/page.tsx:14
+msgid "Create Job Description:"
+msgstr ""
 
 #: apps/client/src/pages/auth/login/page.tsx:65
 msgctxt "This is a link to create a new account"
@@ -347,7 +380,7 @@ msgstr "Skapa ett nu"
 msgid "Create Sample Resume"
 msgstr "Skapa ett exempel på CV"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:62
+#: apps/client/src/pages/home/sections/features/index.tsx:54
 msgid "Custom resume sections"
 msgstr "Anpassade CV-avsnitt"
 
@@ -355,11 +388,11 @@ msgstr "Anpassade CV-avsnitt"
 msgid "Custom Section"
 msgstr "Anpassat avsnitt"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:60
+#: apps/client/src/pages/home/sections/features/index.tsx:52
 msgid "Customisable colour palettes"
 msgstr "Anpassningsbara färgpaletter"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:61
+#: apps/client/src/pages/home/sections/features/index.tsx:53
 msgid "Customisable layouts"
 msgstr "Anpassningsbara layouter"
 
@@ -406,7 +439,7 @@ msgstr "Radera konto"
 msgid "Description"
 msgstr "Beskrivning"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:58
+#: apps/client/src/pages/home/sections/features/index.tsx:50
 msgid "Design single/multi page resumes"
 msgstr "Designa CV:n på en eller flera sidor"
 
@@ -415,10 +448,10 @@ msgid "Disable"
 msgstr "Inaktivera"
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:160
-msgid "Disable 2FA"
-msgstr "Inaktivera 2FA"
+#~ msgid "Disable 2FA"
+#~ msgstr "Inaktivera 2FA"
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:304
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:300
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:219
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:134
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:124
@@ -442,8 +475,12 @@ msgid "Don't see your language? <0>Help translate the app.</0>"
 msgstr "Ser du inte ditt språk? <0>Hjälp med att översätta appen.</0>"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:40
-msgid "Donate to Reactive Resume"
-msgstr "Donera till Reactive Resume"
+#~ msgid "Donate to Reactive Resume"
+#~ msgstr "Donera till Reactive Resume"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:40
+msgid "Donate to ResumeU"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:56
 msgid "Download a JSON snapshot of your resume. This file can be used to import your resume in the future, or can even be shared with others to collaborate."
@@ -495,8 +532,8 @@ msgid "Email"
 msgstr "E-post"
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:169
-msgid "Enable 2FA"
-msgstr "Aktivera 2FA"
+#~ msgid "Enable 2FA"
+#~ msgstr "Aktivera 2FA"
 
 #: apps/client/src/pages/auth/reset-password/page.tsx:67
 msgid "Enter a new password below, and make sure it's secure."
@@ -522,24 +559,32 @@ msgstr "Ange engångslösenordet från din autentiseringsapp nedan."
 msgid "Enter your email address and we will send you a link to reset your password if the account exists."
 msgstr "Ange din e-postadress så skickar vi en länk för att återställa ditt lösenord om kontot finns."
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:285
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:281
 msgid "Errors"
 msgstr "Fel"
 
 #: apps/client/src/pages/home/sections/support/index.tsx:78
-msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Reactive Resume has helped you. Your feedback and support are always welcome and much appreciated!"
-msgstr "Även om du inte har möjlighet att bidra ekonomiskt kan du fortfarande göra skillnad genom att ge GitHub-förvaret en stjärna, sprida budskapet till dina vänner eller skicka ett snabbt meddelande för att låta mig veta hur Reactive Resume har hjälpt dig. Din feedback och stöd är alltid välkomna och mycket uppskattade!"
+#~ msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Reactive Resume has helped you. Your feedback and support are always welcome and much appreciated!"
+#~ msgstr "Även om du inte har möjlighet att bidra ekonomiskt kan du fortfarande göra skillnad genom att ge GitHub-förvaret en stjärna, sprida budskapet till dina vänner eller skicka ett snabbt meddelande för att låta mig veta hur Reactive Resume har hjälpt dig. Din feedback och stöd är alltid välkomna och mycket uppskattade!"
+
+#: apps/client/src/pages/home/sections/support/index.tsx:78
+msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how ResumeU has helped you. Your feedback and support are always welcome and much appreciated!"
+msgstr ""
 
 #: apps/client/src/pages/home/sections/templates/index.tsx:12
-msgid "Explore the templates available in Reactive Resume and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
-msgstr "Utforska mallarna som är tillgängliga i Reactive Resume och se de CV som skapats med dem. De kan också fungera som exempel för att hjälpa dig att skapa ditt nästa CV."
+#~ msgid "Explore the templates available in Reactive Resume and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
+#~ msgstr "Utforska mallarna som är tillgängliga i Reactive Resume och se de CV som skapats med dem. De kan också fungera som exempel för att hjälpa dig att skapa ditt nästa CV."
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:111
+#: apps/client/src/pages/home/sections/templates/index.tsx:12
+msgid "Explore the templates available in ResumeU and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:105
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:40
 msgid "Export"
 msgstr "Exportera"
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:257
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:253
 msgid "File"
 msgstr "Fil"
 
@@ -548,8 +593,8 @@ msgid "Filetype"
 msgstr "Filtyp"
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:38
-msgid "Finally,"
-msgstr "Äntligen,"
+#~ msgid "Finally,"
+#~ msgstr "Äntligen,"
 
 #: apps/client/src/components/ai-actions.tsx:90
 msgid "Fix Spelling & Grammar"
@@ -597,8 +642,8 @@ msgid "Found a bug, or have an idea for a new feature?"
 msgstr "Hittade du en bugg eller har du en idé om en ny funktion?"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:46
-msgid "Free, forever"
-msgstr "Gratis, för alltid"
+#~ msgid "Free, forever"
+#~ msgstr "Gratis, för alltid"
 
 #: apps/client/src/components/ai-actions.tsx:121
 #: apps/client/src/components/ai-actions.tsx:124
@@ -613,7 +658,7 @@ msgstr "Fullständigt namn"
 msgid "Generate a random title for your resume"
 msgstr "Skapa en slumpmässig titel för ditt CV"
 
-#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:32
+#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:31
 msgid "Get Started"
 msgstr "Kom igång"
 
@@ -683,12 +728,16 @@ msgid "Horizontal"
 msgstr "Horisontell"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:67
-msgid "Host your resume publicly"
-msgstr "Gör ditt CV offentligt tillgängligt"
+#~ msgid "Host your resume publicly"
+#~ msgstr "Gör ditt CV offentligt tillgängligt"
 
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:70
-msgid "I always love to hear from the users of Reactive Resume with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
-msgstr "Jag älskar alltid att höra från användarna av Reactive Resume med feedback eller stöd. Här är några av meddelandena jag har fått. Om du har feedback får du gärna skicka ett mejl till mig på <0>{email}</0>."
+#~ msgid "I always love to hear from the users of Reactive Resume with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
+#~ msgstr "Jag älskar alltid att höra från användarna av Reactive Resume med feedback eller stöd. Här är några av meddelandena jag har fått. Om du har feedback får du gärna skicka ett mejl till mig på <0>{email}</0>."
+
+#: apps/client/src/pages/home/sections/testimonials/index.tsx:70
+msgid "I always love to hear from the users of ResumeU with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:94
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:53
@@ -707,7 +756,7 @@ msgstr "Om du inaktiverar tvåfaktorsautentisering kommer du inte längre att be
 msgid "If you're multilingual, we'd love your help in bringing the app to more languages and communities. Don't worry if you don't see your language on the list - just give me a shout-out on GitHub, and I'll make sure to include it. Ready to get started? Jump into translation over at Crowdin by clicking the link below."
 msgstr "Om du är flerspråkig skulle vi älska din hjälp med att föra appen till fler språk och gemenskaper. Oroa dig inte om du inte ser ditt språk på listan - ge mig bara en shout-out på GitHub, så ska jag se till att inkludera det. Redo att komma igång? Hoppa till översättning på Crowdin genom att klicka på länken nedan."
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:311
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:307
 msgid "Import"
 msgstr "Importera"
 
@@ -716,6 +765,10 @@ msgstr "Importera"
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/import-item.tsx:17
 msgid "Import an existing resume"
 msgstr "Importera ett befintligt CV"
+
+#: apps/client/src/pages/dashboard/jobdescription/page.tsx:36
+msgid "Improve Job Description with AI"
+msgstr ""
 
 #: apps/client/src/components/ai-actions.tsx:85
 msgid "Improve Writing"
@@ -733,7 +786,7 @@ msgstr "I det här avsnittet kan du ändra ditt lösenord och aktivera/inaktiver
 msgid "In this section, you can delete your account and all the data associated to your user, but please keep in mind that <0>this action is irreversible</0>."
 msgstr "I det här avsnittet kan du radera ditt konto och all data som är kopplad till din användare, men tänk på att <0>denna åtgärd är oåterkallelig</0>."
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:125
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:119
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:117
 msgid "Information"
 msgstr "Information"
@@ -814,14 +867,14 @@ msgstr "Språk"
 msgid "Last updated {lastUpdated}"
 msgstr "Senast uppdaterad {lastUpdated}"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:69
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:63
 #: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:207
 msgid "Layout"
 msgstr "Layout"
 
 #: apps/client/src/pages/home/sections/hero/call-to-action.tsx:38
-msgid "Learn more"
-msgstr "Läs mer"
+#~ msgid "Learn more"
+#~ msgstr "Läs mer"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:44
 msgid "Letter"
@@ -833,14 +886,14 @@ msgid "Level"
 msgstr "Nivå"
 
 #: apps/client/src/components/copyright.tsx:16
-msgid "Licensed under <0>MIT</0>"
-msgstr "Licensierat under <0>MIT</0>"
+#~ msgid "Licensed under <0>MIT</0>"
+#~ msgstr "Licensierat under <0>MIT</0>"
 
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:86
 msgid "Light"
 msgstr "Ljus"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:69
+#: apps/client/src/pages/home/sections/features/index.tsx:59
 msgid "Light or dark theme"
 msgstr "Ljust eller mörkt tema"
 
@@ -871,7 +924,7 @@ msgstr "Plats"
 msgid "Lock"
 msgstr "Lås"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:64
+#: apps/client/src/pages/home/sections/features/index.tsx:56
 msgid "Lock a resume to prevent editing"
 msgstr "Lås ett CV för att förhindra redigering"
 
@@ -892,7 +945,7 @@ msgstr "Har du tappat bort din enhet?"
 msgid "Main"
 msgstr "Huvud"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:59
+#: apps/client/src/pages/home/sections/features/index.tsx:51
 msgid "Manage multiple resumes"
 msgstr "Hantera flera CV"
 
@@ -919,8 +972,8 @@ msgid "Max Tokens"
 msgstr ""
 
 #: apps/client/src/pages/home/sections/features/index.tsx:48
-msgid "MIT License"
-msgstr "MIT-licens"
+#~ msgid "MIT License"
+#~ msgstr "MIT-licens"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:146
 msgid "Model"
@@ -957,14 +1010,14 @@ msgid "No results found"
 msgstr "Inga resultat hittades"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:49
-msgid "No user tracking or advertising"
-msgstr "Ingen användarspårning eller reklam"
+#~ msgid "No user tracking or advertising"
+#~ msgstr "Ingen användarspårning eller reklam"
 
 #: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:133
 msgid "Note: This will make your account less secure."
 msgstr "Obs! Detta kommer att göra ditt konto mindre säkert."
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:118
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:112
 #: apps/client/src/pages/builder/sidebars/right/sections/notes.tsx:17
 msgid "Notes"
 msgstr "Anteckningar"
@@ -991,8 +1044,8 @@ msgid "Open"
 msgstr "Öppna"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:47
-msgid "Open Source"
-msgstr "Öppen källkod"
+#~ msgid "Open Source"
+#~ msgstr "Öppen källkod"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:120
 msgid "OpenAI / Ollama API Key"
@@ -1000,12 +1053,13 @@ msgstr ""
 
 #: apps/client/src/services/openai/change-tone.ts:34
 #: apps/client/src/services/openai/fix-grammar.ts:32
-#: apps/client/src/services/openai/improve-writing.ts:32
+#: apps/client/src/services/openai/improve-writing.ts:38
+#: apps/client/src/services/openai/improve-writing.ts:60
 msgid "OpenAI did not return any choices for your text."
 msgstr "OpenAI returnerade inga val för din text."
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:77
-#: apps/client/src/pages/home/sections/features/index.tsx:52
+#: apps/client/src/pages/home/sections/features/index.tsx:46
 msgid "OpenAI Integration"
 msgstr "OpenAI-integration"
 
@@ -1014,7 +1068,7 @@ msgstr "OpenAI-integration"
 msgid "Options"
 msgstr "Inställningar"
 
-#: apps/client/src/pages/auth/layout.tsx:47
+#: apps/client/src/pages/auth/layout.tsx:45
 msgctxt "The user can either login with email/password, or continue with GitHub or Google."
 msgid "or continue with"
 msgstr "eller fortsätta med"
@@ -1023,7 +1077,7 @@ msgstr "eller fortsätta med"
 msgid "Organization"
 msgstr "Organisation"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:90
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:84
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:26
 msgid "Page"
 msgstr "Sida"
@@ -1043,7 +1097,7 @@ msgstr "Lösenord"
 msgid "PDF"
 msgstr "PDF"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:63
+#: apps/client/src/pages/home/sections/features/index.tsx:55
 msgid "Personal notes for each resume"
 msgstr "Personliga anteckningar för varje CV"
 
@@ -1051,11 +1105,11 @@ msgstr "Personliga anteckningar för varje CV"
 msgid "Phone"
 msgstr "Telefon"
 
-#: apps/client/src/pages/auth/layout.tsx:76
+#: apps/client/src/pages/auth/layout.tsx:74
 msgid "Photograph by Patrick Tomasso"
 msgstr "Foto av Patrick Tomasso"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:66
+#: apps/client/src/pages/home/sections/features/index.tsx:58
 msgid "Pick any font from Google Fonts"
 msgstr "Välj valfritt typsnitt från Google Fonts"
 
@@ -1090,8 +1144,8 @@ msgid "Position"
 msgstr "Position"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:96
-msgid "Powered by"
-msgstr "Drivs av"
+#~ msgid "Powered by"
+#~ msgstr "Drivs av"
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:113
 msgid "Powered by <0>Simple Icons</0>"
@@ -1101,7 +1155,6 @@ msgstr "Drivs av <0>Simple Icons</0>"
 msgid "Primary Color"
 msgstr "Primärfärg"
 
-#: apps/client/src/pages/home/components/footer.tsx:50
 #: apps/client/src/pages/home/meta/privacy-policy/page.tsx:10
 #: apps/client/src/pages/home/meta/privacy-policy/page.tsx:23
 msgid "Privacy Policy"
@@ -1144,24 +1197,24 @@ msgstr "Lyfta en fråga"
 #: apps/client/src/pages/home/page.tsx:24
 #: apps/client/src/pages/public/page.tsx:73
 #: apps/client/src/pages/public/page.tsx:94
-msgid "Reactive Resume"
-msgstr "Reactive Resume"
+#~ msgid "Reactive Resume"
+#~ msgstr "Reactive Resume"
 
 #: apps/client/src/pages/home/sections/logo-cloud/index.tsx:39
-msgid "Reactive Resume has helped people land jobs at these great companies:"
-msgstr "Reactive Resume har hjälpt människor att få jobb på dessa fantastiska företag:"
+#~ msgid "Reactive Resume has helped people land jobs at these great companies:"
+#~ msgstr "Reactive Resume har hjälpt människor att få jobb på dessa fantastiska företag:"
 
 #: apps/client/src/pages/home/sections/support/index.tsx:12
-msgid "Reactive Resume is a free and open-source project crafted mostly by me, and your support would be greatly appreciated. If you're inclined to contribute, and only if you can afford to, consider making a donation through any of the listed platforms. Additionally, donations to Reactive Resume through Open Collective are tax-exempt, as the project is fiscally hosted by Open Collective Europe."
-msgstr "Reactive Resume är ett gratis projekt med öppen källkod som skapades mestadels av mig, och ditt stöd skulle uppskattas mycket. Om du är benägen att bidra, och bara om du har råd, överväg att göra en donation via någon av de listade plattformarna. Dessutom är donationer till Reactive Resume genom Open Collective skattebefriade, eftersom projektet är skattemässigt värd för Open Collective Europe."
+#~ msgid "Reactive Resume is a free and open-source project crafted mostly by me, and your support would be greatly appreciated. If you're inclined to contribute, and only if you can afford to, consider making a donation through any of the listed platforms. Additionally, donations to Reactive Resume through Open Collective are tax-exempt, as the project is fiscally hosted by Open Collective Europe."
+#~ msgstr "Reactive Resume är ett gratis projekt med öppen källkod som skapades mestadels av mig, och ditt stöd skulle uppskattas mycket. Om du är benägen att bidra, och bara om du har råd, överväg att göra en donation via någon av de listade plattformarna. Dessutom är donationer till Reactive Resume genom Open Collective skattebefriade, eftersom projektet är skattemässigt värd för Open Collective Europe."
 
 #: apps/client/src/pages/home/sections/features/index.tsx:107
-msgid "Reactive Resume is a passion project of over 3 years of hard work, and with that comes a number of re-iterated ideas and features that have been built to (near) perfection."
-msgstr "Reactive Resume är ett passionsprojekt med över 3 års hårt arbete, och med det kommer ett antal upprepade idéer och funktioner som har byggts till (nästan) perfektion."
+#~ msgid "Reactive Resume is a passion project of over 3 years of hard work, and with that comes a number of re-iterated ideas and features that have been built to (near) perfection."
+#~ msgstr "Reactive Resume är ett passionsprojekt med över 3 års hårt arbete, och med det kommer ett antal upprepade idéer och funktioner som har byggts till (nästan) perfektion."
 
 #: apps/client/src/pages/home/sections/contributors/index.tsx:22
-msgid "Reactive Resume thrives thanks to its vibrant community. This project owes its progress to numerous individuals who've dedicated their time and skills. Below, we celebrate the coders who've enhanced its features on GitHub and the linguists whose translations on Crowdin have made it accessible to a broader audience."
-msgstr "Reactive Resume trivs tack vare sin livfulla gemenskap. Projektet har många individer som har ägnat sin tid och sin kompetens att tacka för sina framsteg. Nedan firar vi de kodare som har förbättrat dess funktioner på GitHub och de lingvister vars översättningar på Crowdin har gjort det tillgängligt för en bredare publik."
+#~ msgid "Reactive Resume thrives thanks to its vibrant community. This project owes its progress to numerous individuals who've dedicated their time and skills. Below, we celebrate the coders who've enhanced its features on GitHub and the linguists whose translations on Crowdin have made it accessible to a broader audience."
+#~ msgstr "Reactive Resume trivs tack vare sin livfulla gemenskap. Projektet har många individer som har ägnat sin tid och sin kompetens att tacka för sina framsteg. Nedan firar vi de kodare som har förbättrat dess funktioner på GitHub och de lingvister vars översättningar på Crowdin har gjort det tillgängligt för en bredare publik."
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:79
 msgid "Redo"
@@ -1204,6 +1257,10 @@ msgstr "Återställ ditt lösenord"
 msgid "Reset Zoom"
 msgstr "Återställ zoom"
 
+#: apps/client/src/pages/home/page.tsx:18
+msgid "Resume builder"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/_components/sidebar.tsx:86
 #: apps/client/src/pages/dashboard/resumes/page.tsx:20
 #: apps/client/src/pages/dashboard/resumes/page.tsx:37
@@ -1214,7 +1271,38 @@ msgstr "CV"
 msgid "Resumes Generated"
 msgstr "Genererade CV"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:105
+#: apps/client/src/pages/auth/backup-otp/page.tsx:52
+#: apps/client/src/pages/auth/forgot-password/page.tsx:49
+#: apps/client/src/pages/auth/login/page.tsx:55
+#: apps/client/src/pages/auth/register/page.tsx:64
+#: apps/client/src/pages/auth/reset-password/page.tsx:60
+#: apps/client/src/pages/auth/verify-email/page.tsx:43
+#: apps/client/src/pages/auth/verify-otp/page.tsx:52
+#: apps/client/src/pages/builder/page.tsx:43
+#: apps/client/src/pages/dashboard/resumes/page.tsx:20
+#: apps/client/src/pages/dashboard/settings/page.tsx:16
+#: apps/client/src/pages/home/components/footer.tsx:16
+#: apps/client/src/pages/home/meta/privacy-policy/page.tsx:10
+#: apps/client/src/pages/home/page.tsx:18
+#: apps/client/src/pages/home/sections/hero/index.tsx:23
+#: apps/client/src/pages/public/page.tsx:73
+#: apps/client/src/pages/public/page.tsx:94
+msgid "ResumeU"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/logo-cloud/index.tsx:39
+msgid "ResumeU has helped people land jobs at these great companies:"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/support/index.tsx:12
+msgid "ResumeU is a free and open-source project crafted mostly by me, and your support would be greatly appreciated. If you're inclined to contribute, and only if you can afford to, consider making a donation through any of the listed platforms. Additionally, donations to ResumeU through Open Collective are tax-exempt, as the project is fiscally hosted by Open Collective Europe."
+msgstr ""
+
+#: apps/client/src/pages/home/sections/features/index.tsx:68
+msgid "ResumeU is a passion project of over 3 years of hard work, and with that comes a number of re-iterated ideas and features that have been built to (near) perfection."
+msgstr ""
+
+#: apps/client/src/pages/home/sections/features/index.tsx:66
 msgid "Rich in features, not in pricing."
 msgstr "Rik på funktioner, inte på priser."
 
@@ -1262,7 +1350,7 @@ msgstr "Sök efter en typsnittsvariant"
 msgid "Search for a language"
 msgstr "Sök efter ett språk"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:56
+#: apps/client/src/pages/home/sections/features/index.tsx:48
 msgid "Secure with two-factor authentication"
 msgstr "Säker med tvåfaktorsautentisering"
 
@@ -1271,8 +1359,8 @@ msgid "Security"
 msgstr "Säkerhet"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:50
-msgid "Self-host with Docker"
-msgstr "Självvärd med Docker"
+#~ msgid "Self-host with Docker"
+#~ msgstr "Självvärd med Docker"
 
 #: apps/client/src/pages/auth/forgot-password/page.tsx:104
 msgid "Send Email"
@@ -1297,7 +1385,7 @@ msgstr "Inställningar"
 msgid "Setup two-factor authentication on your account"
 msgstr "Ställ in tvåfaktorsautentisering på ditt konto"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:97
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:91
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:39
 msgid "Sharing"
 msgstr "Delning"
@@ -1333,17 +1421,17 @@ msgstr "Logga in nu"
 msgid "Sign in to your account"
 msgstr "Logga in på ditt konto"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:55
+#: apps/client/src/pages/home/sections/features/index.tsx:47
 msgid "Sign in with Email"
 msgstr "Logga in med e-post"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:53
-msgid "Sign in with GitHub"
-msgstr "Logga in med GitHub"
+#~ msgid "Sign in with GitHub"
+#~ msgstr "Logga in med GitHub"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:54
-msgid "Sign in with Google"
-msgstr "Logga in med Google"
+#~ msgid "Sign in with Google"
+#~ msgstr "Logga in med Google"
 
 #: apps/client/src/pages/auth/register/page.tsx:177
 msgid "Sign up"
@@ -1382,16 +1470,24 @@ msgstr "Något gick fel när din begäran bearbetades. Försök igen senare elle
 msgid "Square"
 msgstr "Fyrkant"
 
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/create-jd-card.tsx:33
+msgid "Start building a job description from scratch"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/create-card.tsx:33
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/create-item.tsx:23
 msgid "Start building from scratch"
 msgstr "Börja bygga från början"
 
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/index.tsx:75
+msgid "Start building from scratch on Job Description"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:183
 msgid "Start building your resume by giving it a name."
 msgstr "Börja bygga ditt CV genom att ge det ett namn."
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:104
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:98
 #: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:23
 msgid "Statistics"
 msgstr "Statistik"
@@ -1421,10 +1517,14 @@ msgid "Support the app by donating what you can!"
 msgstr "Stöd appen genom att donera vad du kan!"
 
 #: apps/client/src/pages/home/sections/support/index.tsx:9
-msgid "Supporting Reactive Resume"
-msgstr "Stödjer Reactive Resume"
+#~ msgid "Supporting Reactive Resume"
+#~ msgstr "Stödjer Reactive Resume"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:65
+#: apps/client/src/pages/home/sections/support/index.tsx:9
+msgid "Supporting ResumeU"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/features/index.tsx:57
 msgid "Supports A4/Letter page formats"
 msgstr "Stöder A4/Brev-sidformat"
 
@@ -1432,7 +1532,7 @@ msgstr "Stöder A4/Brev-sidformat"
 msgid "System"
 msgstr "System"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:62
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:56
 #: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:19
 msgid "Template"
 msgstr "Mall"
@@ -1465,7 +1565,7 @@ msgstr "Lösenorden du angav stämmer inte överens."
 msgid "The resume you want to update is locked, please unlock if you wish to make any changes to it."
 msgstr "CV:t du vill uppdatera är låst, lås upp om du vill göra några ändringar i det."
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:83
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:77
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:20
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:79
 msgid "Theme"
@@ -1517,12 +1617,11 @@ msgid "Toggle Page Numbers"
 msgstr "Växla sidnummer"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:68
-msgid "Track views and downloads"
-msgstr "Spåra visningar och nedladdningar"
+#~ msgid "Track views and downloads"
+#~ msgstr "Spåra visningar och nedladdningar"
 
 #: apps/client/src/pages/auth/verify-otp/page.tsx:52
 #: apps/client/src/pages/auth/verify-otp/page.tsx:57
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:135
 msgid "Two-Factor Authentication"
 msgstr "Tvåfaktorsautentisering"
 
@@ -1543,7 +1642,7 @@ msgstr "Skriv <0>delete</0> för att bekräfta borttagningen av ditt konto."
 msgid "Type of Study"
 msgstr "Typ av studie"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:76
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:70
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:65
 msgid "Typography"
 msgstr "Typografi"
@@ -1580,8 +1679,12 @@ msgid "Update an existing resume"
 msgstr "Uppdatera ett befintligt CV"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:214
-msgid "Upload a file from one of the accepted sources to parse existing data and import it into Reactive Resume for easier editing."
-msgstr "Ladda upp en fil från en av de godkända källorna för att analysera befintlig data och importera den till Reactive Resume för enklare redigering."
+#~ msgid "Upload a file from one of the accepted sources to parse existing data and import it into Reactive Resume for easier editing."
+#~ msgstr "Ladda upp en fil från en av de godkända källorna för att analysera befintlig data och importera den till Reactive Resume för enklare redigering."
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:214
+msgid "Upload a file from one of the accepted sources to parse existing data and import it into ResumeU for easier editing."
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:73
 msgid "URL"
@@ -1610,11 +1713,11 @@ msgstr "Användarnamn"
 msgid "Users Signed Up"
 msgstr "Registrerade användare"
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:298
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:294
 msgid "Validate"
 msgstr "Validera"
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:316
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:312
 msgid "Validated"
 msgstr "Validerad"
 
@@ -1636,8 +1739,8 @@ msgid "Verify your email address"
 msgstr "Verifiera din e-postadress"
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:26
-msgid "Version 4"
-msgstr "Version 4"
+#~ msgid "Version 4"
+#~ msgstr "Version 4"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:51
 msgid "Views"
@@ -1666,8 +1769,12 @@ msgid "Website"
 msgstr "Webbplats"
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:32
-msgid "What's new in the latest version"
-msgstr "Vad är nytt i den senaste versionen"
+#~ msgid "What's new in the latest version"
+#~ msgstr "Vad är nytt i den senaste versionen"
+
+#: apps/client/src/pages/dashboard/jobdescription/page.tsx:17
+msgid "Write a job description..."
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:157
 #: apps/client/src/pages/builder/sidebars/left/dialogs/interests.tsx:68
@@ -1693,12 +1800,20 @@ msgid "You can track the number of views your resume has received, or how many p
 msgstr "Du kan spåra antalet visningar ditt CV har fått, eller hur många personer som har laddat ner CV:t genom att aktivera offentlig delning."
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:85
-msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in Reactive Resume altogether, you can simply remove the key from your settings."
-msgstr "Du har möjlighet att <0>skaffa din egen OpenAI API-nyckel</0>. Den här nyckeln ger dig möjlighet att utnyttja API:et som du vill. Alternativt, om du vill inaktivera AI-funktionerna i Reactive Resume helt och hållet, kan du helt enkelt ta bort nyckeln från dina inställningar."
+#~ msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in Reactive Resume altogether, you can simply remove the key from your settings."
+#~ msgstr "Du har möjlighet att <0>skaffa din egen OpenAI API-nyckel</0>. Den här nyckeln ger dig möjlighet att utnyttja API:et som du vill. Alternativt, om du vill inaktivera AI-funktionerna i Reactive Resume helt och hållet, kan du helt enkelt ta bort nyckeln från dina inställningar."
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:85
+msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in ResumeU altogether, you can simply remove the key from your settings."
+msgstr ""
 
 #: apps/client/src/pages/auth/verify-email/page.tsx:50
-msgid "You should have received an email from <0>Reactive Resume</0> with a link to verify your account."
-msgstr "Du borde ha fått ett e-postmeddelande från <0>Reactive Resume</0> med en länk för att verifiera ditt konto."
+#~ msgid "You should have received an email from <0>Reactive Resume</0> with a link to verify your account."
+#~ msgstr "Du borde ha fått ett e-postmeddelande från <0>Reactive Resume</0> med en länk för att verifiera ditt konto."
+
+#: apps/client/src/pages/auth/verify-email/page.tsx:50
+msgid "You should have received an email from <0>ResumeU</0> with a link to verify your account."
+msgstr ""
 
 #: apps/client/src/pages/auth/forgot-password/page.tsx:49
 #: apps/client/src/pages/auth/forgot-password/page.tsx:54

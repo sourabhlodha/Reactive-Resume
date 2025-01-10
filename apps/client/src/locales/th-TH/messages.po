@@ -22,7 +22,7 @@ msgstr ""
 msgid "You have enabled two-factor authentication successfully."
 msgstr "คุณได้เปิดการยืนยันตัวตนแบบสองขั้นตอนสำเร็จแล้ว"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:57
+#: apps/client/src/pages/home/sections/features/index.tsx:49
 msgid "{templatesCount} resume templates to choose from"
 msgstr "มีเทมเพลตเรซูเม่ {templatesCount} แบบให้เลือก"
 
@@ -31,38 +31,59 @@ msgid "{value, plural, one {Column} other {Columns}}"
 msgstr "{value, plural, one {คอลัมน์} other {คอลัมน์}}"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:20
-msgid "<0>I built Reactive Resume mostly by myself during my spare time, with a lot of help from other great open-source contributors.</0><1>If you like the app and want to support keeping it free forever, please donate whatever you can afford to give.</1>"
-msgstr "<0>ผมสร้าง Reactive Resume ด้วยตัวเองเป็นส่วนใหญ่ในเวลาว่าง และได้รับความช่วยเหลือมากมายจากนักพัฒนาโอเพนซอร์สคนอื่นๆ</0><1>ถ้าเกิดว่าคุณชอบแอปนี้และอยากสนับสนุนให้มันฟรีตลอดไป โปรดบริจาคเงินช่วยตามกำลังด้วยนะครับ</1>"
+#~ msgid "<0>I built Reactive Resume mostly by myself during my spare time, with a lot of help from other great open-source contributors.</0><1>If you like the app and want to support keeping it free forever, please donate whatever you can afford to give.</1>"
+#~ msgstr "<0>ผมสร้าง Reactive Resume ด้วยตัวเองเป็นส่วนใหญ่ในเวลาว่าง และได้รับความช่วยเหลือมากมายจากนักพัฒนาโอเพนซอร์สคนอื่นๆ</0><1>ถ้าเกิดว่าคุณชอบแอปนี้และอยากสนับสนุนให้มันฟรีตลอดไป โปรดบริจาคเงินช่วยตามกำลังด้วยนะครับ</1>"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:20
+msgid "<0>I built ResumeU mostly by myself during my spare time, with a lot of help from other great open-source contributors.</0><1>If you like the app and want to support keeping it free forever, please donate whatever you can afford to give.</1>"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:51
 msgid "<0>I'm sure the app is not perfect, but I'd like for it to be.</0><1>If you faced any issues while creating your resume, or have an idea that would help you and other users in creating your resume more easily, drop an issue on the repository or send me an email about it.</1>"
 msgstr "<0>ผมมั่นใจว่าแอปยังไม่สมบูรณ์ดี แต่ผมก็อยากให้มันเป็นอย่างนั้น</0><1>ถ้าคุณเจอปัญหาใดๆ ระหว่างที่สร้างเรซูเม่ หรือมีไอเดียดีๆ ที่จะช่วยให้คุณและคนอื่นๆ สร้างเรซูเม่ได้ง่ายขึ้น ให้เปิด issue มาที่ repository ของแอปหรือส่งอีเมลหาผมได้เลยครับ</1>"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:205
-msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that Reactive Resume bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
-msgstr "<0>หมายเหตุ: </0>การใช้ OpenAI API หมายความว่า คุณรับรู้และยอมรับ<1>ข้อกำหนดการใช้บริการ</1>และ<2>นโยบายความเป็นส่วนตัว</2>ของ OpenAI โปรดทราบว่า Reactive Resume ไม่รับผิดชอบการใช้บริการที่ไม่เหมาะสมหรือไม่ได้รับการอนุญาต และความรับผิดชอบเป็นของผู้ใช้แต่เพียงผู้เดียว"
+#~ msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that Reactive Resume bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
+#~ msgstr "<0>หมายเหตุ: </0>การใช้ OpenAI API หมายความว่า คุณรับรู้และยอมรับ<1>ข้อกำหนดการใช้บริการ</1>และ<2>นโยบายความเป็นส่วนตัว</2>ของ OpenAI โปรดทราบว่า Reactive Resume ไม่รับผิดชอบการใช้บริการที่ไม่เหมาะสมหรือไม่ได้รับการอนุญาต และความรับผิดชอบเป็นของผู้ใช้แต่เพียงผู้เดียว"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:205
+msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that ResumeU bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:85
-msgid "<0>The community has spent a lot of time writing the documentation for Reactive Resume, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
-msgstr "<0>ชุมชนของเราใช้เวลามากในการเขียนคู่มือใช้งาน Reactive Resume ขึ้นมา และผมมั่นใจว่าคู่มือจะช่วยให้คุณเริ่มใช้งานแอปได้สะดวกขึ้น</0><1>นอกจากนี้ ยังมีตัวอย่างอีกเยอะมากเพื่อให้คุณเริ่มใช้งานเป็น และฟีเจอร์ที่คุณอาจไม่รู้มาก่อน ซึ่งจะช่วยทำให้คุณสร้างเรซูเม่ที่สมบูรณ์แบบออกมาได้</1>"
+#~ msgid "<0>The community has spent a lot of time writing the documentation for Reactive Resume, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
+#~ msgstr "<0>ชุมชนของเราใช้เวลามากในการเขียนคู่มือใช้งาน Reactive Resume ขึ้นมา และผมมั่นใจว่าคู่มือจะช่วยให้คุณเริ่มใช้งานแอปได้สะดวกขึ้น</0><1>นอกจากนี้ ยังมีตัวอย่างอีกเยอะมากเพื่อให้คุณเริ่มใช้งานเป็น และฟีเจอร์ที่คุณอาจไม่รู้มาก่อน ซึ่งจะช่วยทำให้คุณสร้างเรซูเม่ที่สมบูรณ์แบบออกมาได้</1>"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:85
+msgid "<0>The community has spent a lot of time writing the documentation for ResumeU, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
+msgstr ""
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:146
-msgid "<0>Two-factor authentication is currently disabled.</0> You can enable it by adding an authenticator app to your account."
-msgstr "<0>การยืนยันตัวตนแบบสองขั้นตอนยังไม่ได้เปิดใช้งาน</0> คุณสามารถเปิดใช้งานได้โดยการเพิ่มแอปยืนยันตัวตนลงในบัญชีของคุณ"
+#~ msgid "<0>Two-factor authentication is currently disabled.</0> You can enable it by adding an authenticator app to your account."
+#~ msgstr "<0>การยืนยันตัวตนแบบสองขั้นตอนยังไม่ได้เปิดใช้งาน</0> คุณสามารถเปิดใช้งานได้โดยการเพิ่มแอปยืนยันตัวตนลงในบัญชีของคุณ"
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:139
-msgid "<0>Two-factor authentication is enabled.</0> You will be asked to enter a code every time you sign in."
-msgstr "<0>การยืนยันตัวตนแบบสองขั้นตอนเปิดใช้งานแล้ว</0> คุณจะถูกขอให้กรอกรหัสทุกครั้งที่คุณเข้าสู่ระบบ"
+#~ msgid "<0>Two-factor authentication is enabled.</0> You will be asked to enter a code every time you sign in."
+#~ msgstr "<0>การยืนยันตัวตนแบบสองขั้นตอนเปิดใช้งานแล้ว</0> คุณจะถูกขอให้กรอกรหัสทุกครั้งที่คุณเข้าสู่ระบบ"
 
 #: apps/client/src/pages/home/page.tsx:24
 #: apps/client/src/pages/home/sections/hero/index.tsx:40
-msgid "A free and open-source resume builder"
-msgstr "แอปสร้างเรซูเม่ฟรีและโอเพนซอร์ส"
+#~ msgid "A free and open-source resume builder"
+#~ msgstr "แอปสร้างเรซูเม่ฟรีและโอเพนซอร์ส"
 
 #: apps/client/src/pages/home/components/footer.tsx:21
 #: apps/client/src/pages/home/sections/hero/index.tsx:45
-msgid "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
-msgstr "เครื่องมือสร้างเรซูเม่ฟรีและโอเพนซอร์สที่ทำให้กระบวนการสร้าง การปรับปรุง และการแชร์เรซูเม่ของคุณง่ายขึ้น"
+#~ msgid "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
+#~ msgstr "เครื่องมือสร้างเรซูเม่ฟรีและโอเพนซอร์สที่ทำให้กระบวนการสร้าง การปรับปรุง และการแชร์เรซูเม่ของคุณง่ายขึ้น"
+
+#: apps/client/src/pages/home/sections/hero/index.tsx:24
+msgid "A free resume builder"
+msgstr ""
+
+#: apps/client/src/pages/home/components/footer.tsx:19
+#: apps/client/src/pages/home/sections/hero/index.tsx:28
+msgid "A free resume builder that simplifies the process of creating, updating, and sharing your resume."
+msgstr ""
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:53
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:29
@@ -70,8 +91,8 @@ msgid "A link has been copied to your clipboard."
 msgstr "ลิงก์ถูกคัดลอกไปยังคลิปบอร์ดแล้ว"
 
 #: apps/client/src/components/copyright.tsx:29
-msgid "A passion project by <0>Amruth Pillai</0>"
-msgstr "โครงการทำด้วยใจจาก <0>Amruth Pillai</0>"
+#~ msgid "A passion project by <0>Amruth Pillai</0>"
+#~ msgstr "โครงการทำด้วยใจจาก <0>Amruth Pillai</0>"
 
 #: apps/client/src/pages/auth/forgot-password/page.tsx:57
 msgid "A password reset link should have been sent to your inbox, if an account existed with the email you provided."
@@ -90,7 +111,7 @@ msgid "A4"
 msgstr "A4"
 
 #. Helper text to let the user know what filetypes are accepted. {accept} can be .pdf or .json.
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:272
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:268
 msgid "Accepts only {accept} files"
 msgstr "ยอมรับเฉพาะไฟล์ {accept}"
 
@@ -133,7 +154,7 @@ msgstr "มีบัญชีแล้วใช่หรือไม่?"
 msgid "An error occurred while validating the file."
 msgstr "เกิดข้อผิดพลาดขณะตรวจสอบไฟล์"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:134
+#: apps/client/src/pages/home/sections/features/index.tsx:95
 msgid "and many more..."
 msgstr "และอีกมากมายๆ..."
 
@@ -180,8 +201,8 @@ msgid "Aspect Ratio"
 msgstr "อัตราส่วนภาพ"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:51
-msgid "Available in {languagesCount} languages"
-msgstr "มีให้บริการใน {languagesCount} ภาษา"
+#~ msgid "Available in {languagesCount} languages"
+#~ msgstr "มีให้บริการใน {languagesCount} ภาษา"
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/awards.tsx:53
 msgid "Awarder"
@@ -232,8 +253,8 @@ msgstr "สร้างด้วย"
 
 #: apps/client/src/components/copyright.tsx:27
 #: apps/client/src/pages/home/sections/contributors/index.tsx:20
-msgid "By the community, for the community."
-msgstr "โดยชุมชน เพื่อชุมชน"
+#~ msgid "By the community, for the community."
+#~ msgstr "โดยชุมชน เพื่อชุมชน"
 
 #: apps/client/src/pages/builder/sidebars/left/sections/shared/section-dialog.tsx:131
 #: apps/client/src/pages/dashboard/resumes/_dialogs/lock.tsx:49
@@ -332,11 +353,23 @@ msgstr "สร้างบัญชีใหม่"
 msgid "Create a new item"
 msgstr "สร้างรายการใหม่"
 
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/create-jd-card.tsx:28
+msgid "Create a new job description"
+msgstr ""
+
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/index.tsx:72
+msgid "Create a new Job Description"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:176
 #: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/create-card.tsx:28
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/create-item.tsx:18
 msgid "Create a new resume"
 msgstr "สร้างเรซูเม่ใหม่"
+
+#: apps/client/src/pages/dashboard/jobdescription/page.tsx:14
+msgid "Create Job Description:"
+msgstr ""
 
 #: apps/client/src/pages/auth/login/page.tsx:65
 msgctxt "This is a link to create a new account"
@@ -347,7 +380,7 @@ msgstr "สร้างตอนนี้เลย"
 msgid "Create Sample Resume"
 msgstr "สร้างเรซูเม่ตัวอย่าง"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:62
+#: apps/client/src/pages/home/sections/features/index.tsx:54
 msgid "Custom resume sections"
 msgstr "ส่วนเรซูเม่ที่กำหนดเอง"
 
@@ -355,11 +388,11 @@ msgstr "ส่วนเรซูเม่ที่กำหนดเอง"
 msgid "Custom Section"
 msgstr "ส่วนที่กำหนดเอง"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:60
+#: apps/client/src/pages/home/sections/features/index.tsx:52
 msgid "Customisable colour palettes"
 msgstr "พาเล็ตสีที่ปรับแต่งเองได้"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:61
+#: apps/client/src/pages/home/sections/features/index.tsx:53
 msgid "Customisable layouts"
 msgstr "เค้าโครงที่ปรับแต่งได้"
 
@@ -406,7 +439,7 @@ msgstr "ลบบัญชี"
 msgid "Description"
 msgstr "รายละเอียด"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:58
+#: apps/client/src/pages/home/sections/features/index.tsx:50
 msgid "Design single/multi page resumes"
 msgstr "ออกแบบเรซูเม่หน้าเดียว/หลายหน้า"
 
@@ -415,10 +448,10 @@ msgid "Disable"
 msgstr "ปิดใช้งาน"
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:160
-msgid "Disable 2FA"
-msgstr "ปิดใช้งาน 2FA"
+#~ msgid "Disable 2FA"
+#~ msgstr "ปิดใช้งาน 2FA"
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:304
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:300
 #: apps/client/src/pages/dashboard/settings/_sections/account.tsx:219
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:134
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:124
@@ -442,8 +475,12 @@ msgid "Don't see your language? <0>Help translate the app.</0>"
 msgstr "ไม่เห็นภาษาของคุณเหรอ? <0>ช่วยแปลแอป</0>"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:40
-msgid "Donate to Reactive Resume"
-msgstr "บริจาคให้กับ Reactive Resume"
+#~ msgid "Donate to Reactive Resume"
+#~ msgstr "บริจาคให้กับ Reactive Resume"
+
+#: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:40
+msgid "Donate to ResumeU"
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:56
 msgid "Download a JSON snapshot of your resume. This file can be used to import your resume in the future, or can even be shared with others to collaborate."
@@ -495,8 +532,8 @@ msgid "Email"
 msgstr "อีเมล"
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:169
-msgid "Enable 2FA"
-msgstr "เปิดใช้งาน 2FA"
+#~ msgid "Enable 2FA"
+#~ msgstr "เปิดใช้งาน 2FA"
 
 #: apps/client/src/pages/auth/reset-password/page.tsx:67
 msgid "Enter a new password below, and make sure it's secure."
@@ -522,24 +559,32 @@ msgstr "ป้อนรหัสผ่านแบบครั้งเดีย
 msgid "Enter your email address and we will send you a link to reset your password if the account exists."
 msgstr "ป้อนที่อยู่อีเมลของคุณ และเราจะส่งลิงก์ให้คุณรีเซ็ตรหัสผ่านหากบัญชีนั้นมีอยู่"
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:285
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:281
 msgid "Errors"
 msgstr "ข้อผิดพลาด"
 
 #: apps/client/src/pages/home/sections/support/index.tsx:78
-msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Reactive Resume has helped you. Your feedback and support are always welcome and much appreciated!"
-msgstr "แม้ว่าคุณจะไม่อยู่ในฐานะที่จะบริจาคเงินได้ แต่คุณยังคงสามารถสร้างความแตกต่างได้ด้วยการติดดาวให้กับ GitHub repository นี้ กระจายข่าวให้เพื่อนของคุณ หรือส่งข้อความสั้นๆ เพื่อบอกให้ผมรู้ว่า Reactive Resume ช่วยคุณได้อย่างไร ข้อเสนอแนะและการสนับสนุนของคุณ ผมยินดีน้อมรับและชื่นชมเสมอ!"
+#~ msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Reactive Resume has helped you. Your feedback and support are always welcome and much appreciated!"
+#~ msgstr "แม้ว่าคุณจะไม่อยู่ในฐานะที่จะบริจาคเงินได้ แต่คุณยังคงสามารถสร้างความแตกต่างได้ด้วยการติดดาวให้กับ GitHub repository นี้ กระจายข่าวให้เพื่อนของคุณ หรือส่งข้อความสั้นๆ เพื่อบอกให้ผมรู้ว่า Reactive Resume ช่วยคุณได้อย่างไร ข้อเสนอแนะและการสนับสนุนของคุณ ผมยินดีน้อมรับและชื่นชมเสมอ!"
+
+#: apps/client/src/pages/home/sections/support/index.tsx:78
+msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how ResumeU has helped you. Your feedback and support are always welcome and much appreciated!"
+msgstr ""
 
 #: apps/client/src/pages/home/sections/templates/index.tsx:12
-msgid "Explore the templates available in Reactive Resume and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
-msgstr "สำรวจเทมเพลตที่มีให้ใช้ใน Reactive Resume และดูเรซูเม่ที่สร้างขึ้นจากเทมเพลตนั้น พวกมันยังสามารถเป็นตัวอย่างเพื่อช่วยในการสร้างเรซูเม่ของคุณต่อไป"
+#~ msgid "Explore the templates available in Reactive Resume and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
+#~ msgstr "สำรวจเทมเพลตที่มีให้ใช้ใน Reactive Resume และดูเรซูเม่ที่สร้างขึ้นจากเทมเพลตนั้น พวกมันยังสามารถเป็นตัวอย่างเพื่อช่วยในการสร้างเรซูเม่ของคุณต่อไป"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:111
+#: apps/client/src/pages/home/sections/templates/index.tsx:12
+msgid "Explore the templates available in ResumeU and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
+msgstr ""
+
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:105
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:40
 msgid "Export"
 msgstr "ส่งออก"
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:257
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:253
 msgid "File"
 msgstr "ไฟล์"
 
@@ -548,8 +593,8 @@ msgid "Filetype"
 msgstr "ประเภทไฟล์"
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:38
-msgid "Finally,"
-msgstr "ในที่สุด"
+#~ msgid "Finally,"
+#~ msgstr "ในที่สุด"
 
 #: apps/client/src/components/ai-actions.tsx:90
 msgid "Fix Spelling & Grammar"
@@ -597,8 +642,8 @@ msgid "Found a bug, or have an idea for a new feature?"
 msgstr "เจอบัค หรือมีไอเดียเกี่ยวกับฟีเจอร์ใหม่หรือเปล่า?"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:46
-msgid "Free, forever"
-msgstr "ฟรี ตลอดไป"
+#~ msgid "Free, forever"
+#~ msgstr "ฟรี ตลอดไป"
 
 #: apps/client/src/components/ai-actions.tsx:121
 #: apps/client/src/components/ai-actions.tsx:124
@@ -613,7 +658,7 @@ msgstr "ชื่อเต็ม"
 msgid "Generate a random title for your resume"
 msgstr "สุ่มชื่อให้เรซูเม่ของคุณ"
 
-#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:32
+#: apps/client/src/pages/home/sections/hero/call-to-action.tsx:31
 msgid "Get Started"
 msgstr "เริ่มใช้งาน"
 
@@ -683,12 +728,16 @@ msgid "Horizontal"
 msgstr "แนวนอน"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:67
-msgid "Host your resume publicly"
-msgstr "โฮสต์เรซูเม่ของคุณสู่สาธารณะ"
+#~ msgid "Host your resume publicly"
+#~ msgstr "โฮสต์เรซูเม่ของคุณสู่สาธารณะ"
 
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:70
-msgid "I always love to hear from the users of Reactive Resume with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
-msgstr "ผมชอบได้ยินได้ฟังความคิดเห็นหรือคำสนับสนุนจากผู้ใช้ Reactive Resume อยู่เสมอ นี่คือข้อความบางส่วนที่ผมได้รับ หากคุณมีความคิดเห็นใดๆ โปรดติดต่อผมทางอีเมลที่ <0>{email}</0>"
+#~ msgid "I always love to hear from the users of Reactive Resume with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
+#~ msgstr "ผมชอบได้ยินได้ฟังความคิดเห็นหรือคำสนับสนุนจากผู้ใช้ Reactive Resume อยู่เสมอ นี่คือข้อความบางส่วนที่ผมได้รับ หากคุณมีความคิดเห็นใดๆ โปรดติดต่อผมทางอีเมลที่ <0>{email}</0>"
+
+#: apps/client/src/pages/home/sections/testimonials/index.tsx:70
+msgid "I always love to hear from the users of ResumeU with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:94
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:53
@@ -707,7 +756,7 @@ msgstr "หากคุณปิดใช้งานการยืนยัน
 msgid "If you're multilingual, we'd love your help in bringing the app to more languages and communities. Don't worry if you don't see your language on the list - just give me a shout-out on GitHub, and I'll make sure to include it. Ready to get started? Jump into translation over at Crowdin by clicking the link below."
 msgstr "หากคุณพูดได้หลายภาษา เรายินดีให้คุณช่วยเหลือโดยการนำแอปนี้มาทำให้เข้าถึงได้ในภาษาและชุมชนต่างๆ มากขึ้น ไม่ต้องกังวลหากคุณไม่เห็นภาษาของคุณในรายการ เพียงบอกผมทาง GitHub แล้วผมจะใส่ภาษานั้นไว้ด้วย พร้อมเริ่มหรือยัง? ข้ามไปแปลที่ Crowdin โดยคลิกลิงก์ด้านล่างได้เลย"
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:311
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:307
 msgid "Import"
 msgstr "นําเข้า"
 
@@ -716,6 +765,10 @@ msgstr "นําเข้า"
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/import-item.tsx:17
 msgid "Import an existing resume"
 msgstr "นำเข้าเรซูเม่ที่มีอยู่"
+
+#: apps/client/src/pages/dashboard/jobdescription/page.tsx:36
+msgid "Improve Job Description with AI"
+msgstr ""
 
 #: apps/client/src/components/ai-actions.tsx:85
 msgid "Improve Writing"
@@ -733,7 +786,7 @@ msgstr "ในส่วนนี้ คุณสามารถเปลี่�
 msgid "In this section, you can delete your account and all the data associated to your user, but please keep in mind that <0>this action is irreversible</0>."
 msgstr "ในส่วนนี้ คุณสามารถลบบัญชีของคุณและข้อมูลทั้งหมดที่เกี่ยวข้องกับผู้ใช้ของคุณได้ แต่โปรดจำไว้ว่า <0>การทำเช่นนี้ไม่สามารถย้อนคืนข้อมูลได้</0>"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:125
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:119
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:117
 msgid "Information"
 msgstr "ข้อมูล"
@@ -814,14 +867,14 @@ msgstr "ภาษา"
 msgid "Last updated {lastUpdated}"
 msgstr "อัปเดตล่าสุด {lastUpdated}"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:69
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:63
 #: apps/client/src/pages/builder/sidebars/right/sections/layout.tsx:207
 msgid "Layout"
 msgstr "เค้าโครง"
 
 #: apps/client/src/pages/home/sections/hero/call-to-action.tsx:38
-msgid "Learn more"
-msgstr "เรียนรู้เพิ่มเติม"
+#~ msgid "Learn more"
+#~ msgstr "เรียนรู้เพิ่มเติม"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:44
 msgid "Letter"
@@ -833,14 +886,14 @@ msgid "Level"
 msgstr "ระดับ"
 
 #: apps/client/src/components/copyright.tsx:16
-msgid "Licensed under <0>MIT</0>"
-msgstr "จดสัญญาภายใต้ <0>MIT</0>"
+#~ msgid "Licensed under <0>MIT</0>"
+#~ msgstr "จดสัญญาภายใต้ <0>MIT</0>"
 
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:86
 msgid "Light"
 msgstr "สว่าง"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:69
+#: apps/client/src/pages/home/sections/features/index.tsx:59
 msgid "Light or dark theme"
 msgstr "ธีมสว่างหรือมืด"
 
@@ -871,7 +924,7 @@ msgstr "สถานที่"
 msgid "Lock"
 msgstr "ล็อค"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:64
+#: apps/client/src/pages/home/sections/features/index.tsx:56
 msgid "Lock a resume to prevent editing"
 msgstr "ล็อคเรซูเม่เพื่อป้องกันการแก้ไข"
 
@@ -892,7 +945,7 @@ msgstr "อุปกรณ์ของคุณสูญหายใช่ไห
 msgid "Main"
 msgstr "ส่วนหลัก"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:59
+#: apps/client/src/pages/home/sections/features/index.tsx:51
 msgid "Manage multiple resumes"
 msgstr "จัดการเรซูเม่หลายฉบับ"
 
@@ -919,8 +972,8 @@ msgid "Max Tokens"
 msgstr ""
 
 #: apps/client/src/pages/home/sections/features/index.tsx:48
-msgid "MIT License"
-msgstr "ใบอนุญาต MIT"
+#~ msgid "MIT License"
+#~ msgstr "ใบอนุญาต MIT"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:146
 msgid "Model"
@@ -957,14 +1010,14 @@ msgid "No results found"
 msgstr "ไม่พบผลลัพธ์"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:49
-msgid "No user tracking or advertising"
-msgstr "ไม่มีการติดตามผู้ใช้หรือโฆษณา"
+#~ msgid "No user tracking or advertising"
+#~ msgstr "ไม่มีการติดตามผู้ใช้หรือโฆษณา"
 
 #: apps/client/src/pages/dashboard/settings/_dialogs/two-factor.tsx:133
 msgid "Note: This will make your account less secure."
 msgstr "หมายเหตุ: บัญชีของคุณจะปลอดภัยน้อยลงหากทำเช่นนี้"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:118
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:112
 #: apps/client/src/pages/builder/sidebars/right/sections/notes.tsx:17
 msgid "Notes"
 msgstr "โน้ต"
@@ -991,8 +1044,8 @@ msgid "Open"
 msgstr "เปิด"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:47
-msgid "Open Source"
-msgstr "โอเพนซอร์ส"
+#~ msgid "Open Source"
+#~ msgstr "โอเพนซอร์ส"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:120
 msgid "OpenAI / Ollama API Key"
@@ -1000,12 +1053,13 @@ msgstr ""
 
 #: apps/client/src/services/openai/change-tone.ts:34
 #: apps/client/src/services/openai/fix-grammar.ts:32
-#: apps/client/src/services/openai/improve-writing.ts:32
+#: apps/client/src/services/openai/improve-writing.ts:38
+#: apps/client/src/services/openai/improve-writing.ts:60
 msgid "OpenAI did not return any choices for your text."
 msgstr "OpenAI ไม่ได้ส่งตัวเลือกใดๆ ให้กับข้อความของคุณ"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:77
-#: apps/client/src/pages/home/sections/features/index.tsx:52
+#: apps/client/src/pages/home/sections/features/index.tsx:46
 msgid "OpenAI Integration"
 msgstr "การใช้ระบบ OpenAI"
 
@@ -1014,7 +1068,7 @@ msgstr "การใช้ระบบ OpenAI"
 msgid "Options"
 msgstr "การตั้งค่า"
 
-#: apps/client/src/pages/auth/layout.tsx:47
+#: apps/client/src/pages/auth/layout.tsx:45
 msgctxt "The user can either login with email/password, or continue with GitHub or Google."
 msgid "or continue with"
 msgstr "หรือดำเนินการต่อด้วย"
@@ -1023,7 +1077,7 @@ msgstr "หรือดำเนินการต่อด้วย"
 msgid "Organization"
 msgstr "องค์กร"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:90
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:84
 #: apps/client/src/pages/builder/sidebars/right/sections/page.tsx:26
 msgid "Page"
 msgstr "หน้า"
@@ -1043,7 +1097,7 @@ msgstr "รหัสผ่าน"
 msgid "PDF"
 msgstr "PDF"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:63
+#: apps/client/src/pages/home/sections/features/index.tsx:55
 msgid "Personal notes for each resume"
 msgstr "โน้ตส่วนตัวสำหรับแต่ละเรซูเม่"
 
@@ -1051,11 +1105,11 @@ msgstr "โน้ตส่วนตัวสำหรับแต่ละเร
 msgid "Phone"
 msgstr "เบอร์"
 
-#: apps/client/src/pages/auth/layout.tsx:76
+#: apps/client/src/pages/auth/layout.tsx:74
 msgid "Photograph by Patrick Tomasso"
 msgstr "ภาพถ่ายโดย Patrick Tomasso"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:66
+#: apps/client/src/pages/home/sections/features/index.tsx:58
 msgid "Pick any font from Google Fonts"
 msgstr "เลือกฟอนต์ใดก็ได้จาก Google Fonts"
 
@@ -1090,8 +1144,8 @@ msgid "Position"
 msgstr "ตำแหน่ง"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:96
-msgid "Powered by"
-msgstr "ขับเคลื่อนโดย"
+#~ msgid "Powered by"
+#~ msgstr "ขับเคลื่อนโดย"
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:113
 msgid "Powered by <0>Simple Icons</0>"
@@ -1101,7 +1155,6 @@ msgstr "ขับเคลื่อนโดย <0>Simple Icons</0>"
 msgid "Primary Color"
 msgstr "สีหลัก"
 
-#: apps/client/src/pages/home/components/footer.tsx:50
 #: apps/client/src/pages/home/meta/privacy-policy/page.tsx:10
 #: apps/client/src/pages/home/meta/privacy-policy/page.tsx:23
 msgid "Privacy Policy"
@@ -1144,24 +1197,24 @@ msgstr "แจ้งปัญหา"
 #: apps/client/src/pages/home/page.tsx:24
 #: apps/client/src/pages/public/page.tsx:73
 #: apps/client/src/pages/public/page.tsx:94
-msgid "Reactive Resume"
-msgstr "Reactive Resume"
+#~ msgid "Reactive Resume"
+#~ msgstr "Reactive Resume"
 
 #: apps/client/src/pages/home/sections/logo-cloud/index.tsx:39
-msgid "Reactive Resume has helped people land jobs at these great companies:"
-msgstr "Reactive Resume ช่วยให้ผู้คนได้งานในบริษัทที่ยอดเยี่ยมเหล่านี้:"
+#~ msgid "Reactive Resume has helped people land jobs at these great companies:"
+#~ msgstr "Reactive Resume ช่วยให้ผู้คนได้งานในบริษัทที่ยอดเยี่ยมเหล่านี้:"
 
 #: apps/client/src/pages/home/sections/support/index.tsx:12
-msgid "Reactive Resume is a free and open-source project crafted mostly by me, and your support would be greatly appreciated. If you're inclined to contribute, and only if you can afford to, consider making a donation through any of the listed platforms. Additionally, donations to Reactive Resume through Open Collective are tax-exempt, as the project is fiscally hosted by Open Collective Europe."
-msgstr "Reactive Resume เป็นโครงการฟรีและโอเพนซอร์สที่ถูกสร้างขึ้นโดยส่วนใหญ่โดยผม และขอขอบคุณความช่วยเหลือของคุณอย่างมาก หากคุณสนใจที่จะสนับสนุน และหากคุณสามารถทำได้ไม่เกินกำลัง ให้บริจาคผ่านโดยตรงผ่านแพลตฟอร์มที่ระบุไว้ นอกจากนี้ การบริจาคไปยัง Reactive Resume ผ่าน Open Collective เป็นการยกเว้นภาษี เนื่องจากโครงการนี้ได้รับการเก็บจัดการทางการเงินโดย Open Collective Europe"
+#~ msgid "Reactive Resume is a free and open-source project crafted mostly by me, and your support would be greatly appreciated. If you're inclined to contribute, and only if you can afford to, consider making a donation through any of the listed platforms. Additionally, donations to Reactive Resume through Open Collective are tax-exempt, as the project is fiscally hosted by Open Collective Europe."
+#~ msgstr "Reactive Resume เป็นโครงการฟรีและโอเพนซอร์สที่ถูกสร้างขึ้นโดยส่วนใหญ่โดยผม และขอขอบคุณความช่วยเหลือของคุณอย่างมาก หากคุณสนใจที่จะสนับสนุน และหากคุณสามารถทำได้ไม่เกินกำลัง ให้บริจาคผ่านโดยตรงผ่านแพลตฟอร์มที่ระบุไว้ นอกจากนี้ การบริจาคไปยัง Reactive Resume ผ่าน Open Collective เป็นการยกเว้นภาษี เนื่องจากโครงการนี้ได้รับการเก็บจัดการทางการเงินโดย Open Collective Europe"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:107
-msgid "Reactive Resume is a passion project of over 3 years of hard work, and with that comes a number of re-iterated ideas and features that have been built to (near) perfection."
-msgstr "Reactive Resume เป็นโครงการขับเคลื่อนด้วยใจรักผ่านการทำงานหนัก 3 ปี ดังนั้นมันจึงมาพร้อมกับการคิดทำไอเดียและฟีเจอร์หลายๆ ครั้งเพื่อให้คุณภาพ (ใกล้เคียง) สมบูรณ์ที่สุด"
+#~ msgid "Reactive Resume is a passion project of over 3 years of hard work, and with that comes a number of re-iterated ideas and features that have been built to (near) perfection."
+#~ msgstr "Reactive Resume เป็นโครงการขับเคลื่อนด้วยใจรักผ่านการทำงานหนัก 3 ปี ดังนั้นมันจึงมาพร้อมกับการคิดทำไอเดียและฟีเจอร์หลายๆ ครั้งเพื่อให้คุณภาพ (ใกล้เคียง) สมบูรณ์ที่สุด"
 
 #: apps/client/src/pages/home/sections/contributors/index.tsx:22
-msgid "Reactive Resume thrives thanks to its vibrant community. This project owes its progress to numerous individuals who've dedicated their time and skills. Below, we celebrate the coders who've enhanced its features on GitHub and the linguists whose translations on Crowdin have made it accessible to a broader audience."
-msgstr "Reactive Resume ประสบความสำเร็จได้ด้วยชุมชนที่มีชีวิตชีวา โครงการนี้เกิดจากความคืบหน้าของคนจำนวนมากที่อุทิศเวลาและทักษะของตนมาช่วย ด้านล่างนี้ เรามายินดีให้กับนักพัฒนาที่ได้ปรับปรุงฟีเจอร์บน GitHub และนักแปลที่ทำการแปลบน Crowdin ให้ผู้คนสามารถเข้าถึงได้มากขึ้นในวงกว้าง"
+#~ msgid "Reactive Resume thrives thanks to its vibrant community. This project owes its progress to numerous individuals who've dedicated their time and skills. Below, we celebrate the coders who've enhanced its features on GitHub and the linguists whose translations on Crowdin have made it accessible to a broader audience."
+#~ msgstr "Reactive Resume ประสบความสำเร็จได้ด้วยชุมชนที่มีชีวิตชีวา โครงการนี้เกิดจากความคืบหน้าของคนจำนวนมากที่อุทิศเวลาและทักษะของตนมาช่วย ด้านล่างนี้ เรามายินดีให้กับนักพัฒนาที่ได้ปรับปรุงฟีเจอร์บน GitHub และนักแปลที่ทำการแปลบน Crowdin ให้ผู้คนสามารถเข้าถึงได้มากขึ้นในวงกว้าง"
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:79
 msgid "Redo"
@@ -1204,6 +1257,10 @@ msgstr "รีเซ็ตรหัสผ่านของคุณ"
 msgid "Reset Zoom"
 msgstr "รีเซ็ตการซูม"
 
+#: apps/client/src/pages/home/page.tsx:18
+msgid "Resume builder"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/_components/sidebar.tsx:86
 #: apps/client/src/pages/dashboard/resumes/page.tsx:20
 #: apps/client/src/pages/dashboard/resumes/page.tsx:37
@@ -1214,7 +1271,38 @@ msgstr "เรซูเม่"
 msgid "Resumes Generated"
 msgstr "เรซูเม่ที่สร้าง"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:105
+#: apps/client/src/pages/auth/backup-otp/page.tsx:52
+#: apps/client/src/pages/auth/forgot-password/page.tsx:49
+#: apps/client/src/pages/auth/login/page.tsx:55
+#: apps/client/src/pages/auth/register/page.tsx:64
+#: apps/client/src/pages/auth/reset-password/page.tsx:60
+#: apps/client/src/pages/auth/verify-email/page.tsx:43
+#: apps/client/src/pages/auth/verify-otp/page.tsx:52
+#: apps/client/src/pages/builder/page.tsx:43
+#: apps/client/src/pages/dashboard/resumes/page.tsx:20
+#: apps/client/src/pages/dashboard/settings/page.tsx:16
+#: apps/client/src/pages/home/components/footer.tsx:16
+#: apps/client/src/pages/home/meta/privacy-policy/page.tsx:10
+#: apps/client/src/pages/home/page.tsx:18
+#: apps/client/src/pages/home/sections/hero/index.tsx:23
+#: apps/client/src/pages/public/page.tsx:73
+#: apps/client/src/pages/public/page.tsx:94
+msgid "ResumeU"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/logo-cloud/index.tsx:39
+msgid "ResumeU has helped people land jobs at these great companies:"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/support/index.tsx:12
+msgid "ResumeU is a free and open-source project crafted mostly by me, and your support would be greatly appreciated. If you're inclined to contribute, and only if you can afford to, consider making a donation through any of the listed platforms. Additionally, donations to ResumeU through Open Collective are tax-exempt, as the project is fiscally hosted by Open Collective Europe."
+msgstr ""
+
+#: apps/client/src/pages/home/sections/features/index.tsx:68
+msgid "ResumeU is a passion project of over 3 years of hard work, and with that comes a number of re-iterated ideas and features that have been built to (near) perfection."
+msgstr ""
+
+#: apps/client/src/pages/home/sections/features/index.tsx:66
 msgid "Rich in features, not in pricing."
 msgstr "รวยฟีเจอร์ ไม่ใช่รวยราคา"
 
@@ -1262,7 +1350,7 @@ msgstr "ค้นหารูปแบบฟอนต์"
 msgid "Search for a language"
 msgstr "ค้นหาภาษา"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:56
+#: apps/client/src/pages/home/sections/features/index.tsx:48
 msgid "Secure with two-factor authentication"
 msgstr "รักษาความปลอดภัยด้วยการยืนยันตัวตนสองขั้นตอน"
 
@@ -1271,8 +1359,8 @@ msgid "Security"
 msgstr "ความปลอดภัย"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:50
-msgid "Self-host with Docker"
-msgstr "โฮสต์ด้วยตนเองบน Docker"
+#~ msgid "Self-host with Docker"
+#~ msgstr "โฮสต์ด้วยตนเองบน Docker"
 
 #: apps/client/src/pages/auth/forgot-password/page.tsx:104
 msgid "Send Email"
@@ -1297,7 +1385,7 @@ msgstr "การตั้งค่า"
 msgid "Setup two-factor authentication on your account"
 msgstr "ตั้งค่าการยืนยันตัวตนแบบสองขั้นตอนบนบัญชีของคุณ"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:97
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:91
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:39
 msgid "Sharing"
 msgstr "การแชร์"
@@ -1333,17 +1421,17 @@ msgstr "เข้าสู่ระบบตอนนี้"
 msgid "Sign in to your account"
 msgstr "ลงชื่อเข้าใช้บัญชีของคุณ"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:55
+#: apps/client/src/pages/home/sections/features/index.tsx:47
 msgid "Sign in with Email"
 msgstr "เข้าสู่ระบบด้วยอีเมล"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:53
-msgid "Sign in with GitHub"
-msgstr "เข้าสู่ระบบด้วย GitHub"
+#~ msgid "Sign in with GitHub"
+#~ msgstr "เข้าสู่ระบบด้วย GitHub"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:54
-msgid "Sign in with Google"
-msgstr "เข้าสู่ระบบด้วย Google"
+#~ msgid "Sign in with Google"
+#~ msgstr "เข้าสู่ระบบด้วย Google"
 
 #: apps/client/src/pages/auth/register/page.tsx:177
 msgid "Sign up"
@@ -1382,16 +1470,24 @@ msgstr "เกิดข้อผิดพลาดขณะประมวลผ
 msgid "Square"
 msgstr "จัตุรัส"
 
+#: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/create-jd-card.tsx:33
+msgid "Start building a job description from scratch"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_layouts/grid/_components/create-card.tsx:33
 #: apps/client/src/pages/dashboard/resumes/_layouts/list/_components/create-item.tsx:23
 msgid "Start building from scratch"
 msgstr "เริ่มสร้างตั้งแต่ต้น"
 
+#: apps/client/src/pages/dashboard/resumes/_layouts/list/index.tsx:75
+msgid "Start building from scratch on Job Description"
+msgstr ""
+
 #: apps/client/src/pages/dashboard/resumes/_dialogs/resume.tsx:183
 msgid "Start building your resume by giving it a name."
 msgstr "เริ่มสร้างเรซูเม่ของคุณด้วยการตั้งชื่อ"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:104
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:98
 #: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:23
 msgid "Statistics"
 msgstr "สถิติ"
@@ -1421,10 +1517,14 @@ msgid "Support the app by donating what you can!"
 msgstr "สนับสนุนแอปด้วยการบริจาคเงินตามกำลังของคุณ!"
 
 #: apps/client/src/pages/home/sections/support/index.tsx:9
-msgid "Supporting Reactive Resume"
-msgstr "สนับสนุน Reactive Resume"
+#~ msgid "Supporting Reactive Resume"
+#~ msgstr "สนับสนุน Reactive Resume"
 
-#: apps/client/src/pages/home/sections/features/index.tsx:65
+#: apps/client/src/pages/home/sections/support/index.tsx:9
+msgid "Supporting ResumeU"
+msgstr ""
+
+#: apps/client/src/pages/home/sections/features/index.tsx:57
 msgid "Supports A4/Letter page formats"
 msgstr "รองรับหน้ากระดาษแบบ A4/จดหมาย"
 
@@ -1432,7 +1532,7 @@ msgstr "รองรับหน้ากระดาษแบบ A4/จดห�
 msgid "System"
 msgstr "ระบบ"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:62
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:56
 #: apps/client/src/pages/builder/sidebars/right/sections/template.tsx:19
 msgid "Template"
 msgstr "เทมเพลต"
@@ -1465,7 +1565,7 @@ msgstr "คุณกรอกรหัสผ่านไม่ตรงกัน
 msgid "The resume you want to update is locked, please unlock if you wish to make any changes to it."
 msgstr "เรซูเม่ที่คุณต้องการอัปเดตถูกล็อกแล้ว โปรดปลดล็อกหากคุณต้องการทำการเปลี่ยนแปลงใดๆ กับเรซูเม่นั้น"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:83
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:77
 #: apps/client/src/pages/builder/sidebars/right/sections/theme.tsx:20
 #: apps/client/src/pages/dashboard/settings/_sections/profile.tsx:79
 msgid "Theme"
@@ -1517,12 +1617,11 @@ msgid "Toggle Page Numbers"
 msgstr "เปิด-ปิดเลขหน้า"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:68
-msgid "Track views and downloads"
-msgstr "ติดตามยอดดูและยอดดาวน์โหลด"
+#~ msgid "Track views and downloads"
+#~ msgstr "ติดตามยอดดูและยอดดาวน์โหลด"
 
 #: apps/client/src/pages/auth/verify-otp/page.tsx:52
 #: apps/client/src/pages/auth/verify-otp/page.tsx:57
-#: apps/client/src/pages/dashboard/settings/_sections/security.tsx:135
 msgid "Two-Factor Authentication"
 msgstr "การยืนยันตัวตนแบบสองขั้นตอน"
 
@@ -1543,7 +1642,7 @@ msgstr "พิมพ์คำว่า <0>ลบ</0> เพื่อยืนย
 msgid "Type of Study"
 msgstr "ระดับการศึกษา"
 
-#: apps/client/src/pages/builder/sidebars/right/index.tsx:76
+#: apps/client/src/pages/builder/sidebars/right/index.tsx:70
 #: apps/client/src/pages/builder/sidebars/right/sections/typography.tsx:65
 msgid "Typography"
 msgstr "แบบอักษร"
@@ -1580,8 +1679,12 @@ msgid "Update an existing resume"
 msgstr "อัปเดตเรซูเม่ที่มีอยู่"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:214
-msgid "Upload a file from one of the accepted sources to parse existing data and import it into Reactive Resume for easier editing."
-msgstr "อัปโหลดไฟล์จากแหล่งที่น่าเชื่อถือเพื่อวิเคราะห์ข้อมูลที่มีอยู่และนำเข้าไปยัง Reactive Resume เพื่อให้แก้ไขได้ง่ายขึ้น"
+#~ msgid "Upload a file from one of the accepted sources to parse existing data and import it into Reactive Resume for easier editing."
+#~ msgstr "อัปโหลดไฟล์จากแหล่งที่น่าเชื่อถือเพื่อวิเคราะห์ข้อมูลที่มีอยู่และนำเข้าไปยัง Reactive Resume เพื่อให้แก้ไขได้ง่ายขึ้น"
+
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:214
+msgid "Upload a file from one of the accepted sources to parse existing data and import it into ResumeU for easier editing."
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:73
 msgid "URL"
@@ -1610,11 +1713,11 @@ msgstr "ชื่อผู้ใช้"
 msgid "Users Signed Up"
 msgstr "ผู้ใช้ที่ลงทะเบียน"
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:298
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:294
 msgid "Validate"
 msgstr "ตรวจสอบ"
 
-#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:316
+#: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:312
 msgid "Validated"
 msgstr "ตรวจสอบแล้ว"
 
@@ -1636,8 +1739,8 @@ msgid "Verify your email address"
 msgstr "ยืนยันที่อยู่อีเมลของคุณ"
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:26
-msgid "Version 4"
-msgstr "เวอร์ชั่น 4"
+#~ msgid "Version 4"
+#~ msgstr "เวอร์ชั่น 4"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/statistics.tsx:51
 msgid "Views"
@@ -1666,8 +1769,12 @@ msgid "Website"
 msgstr "เว็บไซต์"
 
 #: apps/client/src/pages/home/sections/hero/index.tsx:32
-msgid "What's new in the latest version"
-msgstr "มีอะไรใหม่ในเวอร์ชั่นล่าสุด"
+#~ msgid "What's new in the latest version"
+#~ msgstr "มีอะไรใหม่ในเวอร์ชั่นล่าสุด"
+
+#: apps/client/src/pages/dashboard/jobdescription/page.tsx:17
+msgid "Write a job description..."
+msgstr ""
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/custom-section.tsx:157
 #: apps/client/src/pages/builder/sidebars/left/dialogs/interests.tsx:68
@@ -1693,12 +1800,20 @@ msgid "You can track the number of views your resume has received, or how many p
 msgstr "คุณสามารถติดตามยอดดูเรซูเม่ของคุณได้ หรือดูว่ามีคนดาวน์โหลดเรซูเม่ที่เปิดเป็นสาธารณะไว้กี่คน"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:85
-msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in Reactive Resume altogether, you can simply remove the key from your settings."
-msgstr "คุณมีตัวเลือกในการ<0>ขอคีย์ OpenAI API ของคุณเอง</0> คีย์นี้ช่วยให้คุณใช้ประโยชน์จาก API ได้ตามที่คุณต้องการ กลับกัน หากคุณต้องการปิดการใช้งานคุณสมบัติ AI ใน Reactive Resume โดยสิ้นเชิง คุณแค่ลบคีย์ออกจากการตั้งค่าของคุณได้เลย"
+#~ msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in Reactive Resume altogether, you can simply remove the key from your settings."
+#~ msgstr "คุณมีตัวเลือกในการ<0>ขอคีย์ OpenAI API ของคุณเอง</0> คีย์นี้ช่วยให้คุณใช้ประโยชน์จาก API ได้ตามที่คุณต้องการ กลับกัน หากคุณต้องการปิดการใช้งานคุณสมบัติ AI ใน Reactive Resume โดยสิ้นเชิง คุณแค่ลบคีย์ออกจากการตั้งค่าของคุณได้เลย"
+
+#: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:85
+msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in ResumeU altogether, you can simply remove the key from your settings."
+msgstr ""
 
 #: apps/client/src/pages/auth/verify-email/page.tsx:50
-msgid "You should have received an email from <0>Reactive Resume</0> with a link to verify your account."
-msgstr "คุณควรจะได้รับอีเมลจาก <0>Reactive Resume</0> พร้อมลิงก์สำหรับยืนยันบัญชีของคุณแล้ว"
+#~ msgid "You should have received an email from <0>Reactive Resume</0> with a link to verify your account."
+#~ msgstr "คุณควรจะได้รับอีเมลจาก <0>Reactive Resume</0> พร้อมลิงก์สำหรับยืนยันบัญชีของคุณแล้ว"
+
+#: apps/client/src/pages/auth/verify-email/page.tsx:50
+msgid "You should have received an email from <0>ResumeU</0> with a link to verify your account."
+msgstr ""
 
 #: apps/client/src/pages/auth/forgot-password/page.tsx:49
 #: apps/client/src/pages/auth/forgot-password/page.tsx:54
