@@ -1,0 +1,113 @@
+services:
+  # PostgreSQL Database
+  - type: pserv
+    name: postgres
+    env: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    disk:
+      name: postgres-data
+      mountPath: /var/lib/postgresql/data
+      sizeGB: 10
+    envVars:
+      - key: POSTGRES_DB
+        value: postgres
+      - key: POSTGRES_USER
+        value: postgres
+      - key: POSTGRES_PASSWORD
+        sync: false
+
+  # MinIO Object Storage
+  - type: pserv
+    name: minio
+    env: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    disk:
+      name: minio-data
+      mountPath: /data
+      sizeGB: 10
+    envVars:
+      - key: MINIO_ROOT_USER
+        sync: false
+      - key: MINIO_ROOT_PASSWORD
+        sync: false
+
+  # Chrome Browser Service
+  - type: web
+    name: chrome
+    env: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: TOKEN
+        fromService:
+          name: app
+          type: web
+          envVarKey: CHROME_TOKEN
+      - key: EXIT_ON_HEALTH_FAILURE
+        value: "true"
+      - key: PRE_REQUEST_HEALTH_CHECK
+        value: "true"
+
+  # Redis Cache Service
+  - type: pserv
+    name: redis
+    env: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: REDIS_PASSWORD
+        sync: false
+
+  # Main Application
+  - type: web
+    name: app
+    env: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: NODE_ENV
+        value: production
+      - key: PUBLIC_URL
+        value: https://${RENDER_EXTERNAL_URL}
+      - key: STORAGE_URL
+        value: https://${RENDER_EXTERNAL_HOSTNAME}-minio/storage
+      - key: CHROME_TOKEN
+        generateValue: true
+      - key: CHROME_URL
+        value: ws://chrome:3000
+      - key: DATABASE_URL
+        value: postgresql://postgres:${POSTGRES_PASSWORD}@postgres:5432/postgres
+      - key: ACCESS_TOKEN_SECRET
+        generateValue: true
+      - key: REFRESH_TOKEN_SECRET
+        generateValue: true
+      - key: STORAGE_ENDPOINT
+        value: minio
+      - key: STORAGE_PORT
+        value: 9000
+      - key: STORAGE_BUCKET
+        value: default
+      - key: STORAGE_ACCESS_KEY
+        fromService:
+          name: minio
+          type: pserv
+          envVarKey: MINIO_ROOT_USER
+      - key: STORAGE_SECRET_KEY
+        fromService:
+          name: minio
+          type: pserv
+          envVarKey: MINIO_ROOT_PASSWORD
+      - key: STORAGE_USE_SSL
+        value: true
+      - key: REDIS_URL
+        value: redis://default:${REDIS_PASSWORD}@redis:6379
+    depends_on:
+      - postgres
+      - minio
+      - redis
+      - chrome
