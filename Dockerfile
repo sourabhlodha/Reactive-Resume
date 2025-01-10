@@ -1,62 +1,62 @@
-# Base stage for shared dependencies
-FROM node:18-alpine AS base
+ARG NX_CLOUD_ACCESS_TOKEN
 
-# Install system dependencies
-RUN apk add --no-cache \
-    chromium \
-    nss \
-    freetype \
-    freetype-dev \
-    harfbuzz \
-    ca-certificates \
-    ttf-freefont \
-    nodejs \
-    yarn
+# Base Image
+FROM node:lts-bullseye-slim AS base
+ARG NX_CLOUD_ACCESS_TOKEN
+
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+
+RUN corepack enable pnpm && corepack prepare pnpm --activate
 
 # Install MinIO client
-RUN wget https://dl.min.io/client/mc/release/linux-amd64/mc && \
-    chmod +x mc && \
-    mv mc /usr/local/bin/
-
-# Development stage
-FROM base AS development
+RUN apt-get update && apt-get install -y wget \
+    && wget https://dl.min.io/client/mc/release/linux-amd64/mc \
+    && chmod +x mc \
+    && mv mc /usr/local/bin/ \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-COPY package*.json ./
-RUN npm install
+# Build Image
+FROM base AS build
+ARG NX_CLOUD_ACCESS_TOKEN
+
+COPY .npmrc package.json pnpm-lock.yaml ./
+COPY ./tools/prisma /app/tools/prisma
+RUN pnpm install --frozen-lockfile
 
 COPY . .
 
-# Production build stage
-FROM base AS builder
+ENV NX_CLOUD_ACCESS_TOKEN=$NX_CLOUD_ACCESS_TOKEN
 
-WORKDIR /app
+RUN pnpm run build
 
-COPY package*.json ./
-RUN npm ci
+# Release Image
+FROM base AS release
 
-COPY . .
-RUN npm run build
+RUN apt-get update && apt-get install -y dumb-init --no-install-recommends \
+    && rm -rf /var/lib/apt/lists/*
 
-# Production stage
-FROM base AS production
+COPY --chown=node:node --from=build /app/.npmrc /app/package.json /app/pnpm-lock.yaml ./
+RUN pnpm install --prod --frozen-lockfile
 
-WORKDIR /app
-
-# Copy built assets
-COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/package*.json ./
-COPY --from=builder /app/node_modules ./node_modules
-
-# Environment variables for MinIO
-ENV MINIO_ROOT_USER=minioadmin \
-    MINIO_ROOT_PASSWORD=minioadmin \
-    MINIO_PORT=9000 \
-    MINIO_CONSOLE_PORT=9001
+COPY --chown=node:node --from=build /app/dist ./dist
+COPY --chown=node:node --from=build /app/tools/prisma ./tools/prisma
+RUN pnpm run prisma:generate
 
 # Create data directory for MinIO
 RUN mkdir -p /data
+
+# Environment variables
+ENV TZ=UTC \
+    PORT=3000 \
+    NODE_ENV=production \
+    MINIO_ROOT_USER=minioadmin \
+    MINIO_ROOT_PASSWORD=minioadmin \
+    MINIO_PORT=9000 \
+    MINIO_CONSOLE_PORT=9001
 
 # Add startup script
 COPY docker-entrypoint.sh /usr/local/bin/

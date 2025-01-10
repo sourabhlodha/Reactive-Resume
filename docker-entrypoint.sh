@@ -32,5 +32,5 @@ EOF
 
 mc policy set-json /tmp/policy.json myminio/${STORAGE_BUCKET}
 
-# Start the application
-exec node dist/apps/server/main.js 
+# Start the application using dumb-init for proper process management
+exec dumb-init -- pnpm run start 
