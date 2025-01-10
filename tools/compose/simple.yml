@@ -42,6 +42,8 @@ services:
       TOKEN: ${CHROME_TOKEN}
       EXIT_ON_HEALTH_FAILURE: true
       PRE_REQUEST_HEALTH_CHECK: true
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   # Redis (for cache & server session management)
   redis:
@@ -66,7 +68,7 @@ services:
 
       # -- URLs --
       PUBLIC_URL: http://localhost:3000
-      STORAGE_URL: http://localhost:9001
+      STORAGE_URL: http://localhost:9001/storage
 
       # -- Printer (Chrome) --
       CHROME_TOKEN: ${CHROME_TOKEN}
