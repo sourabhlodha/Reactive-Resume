@@ -106,8 +106,8 @@ services:
         value: true
       - key: REDIS_URL
         value: redis://default:${REDIS_PASSWORD}@redis:6379
-    depends_on:
-      - postgres
-      - minio
-      - redis
-      - chrome
+    # depends_on:
+    #   - postgres
+    #   - minio
+    #   - redis
+    #   - chrome
