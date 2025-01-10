@@ -1,5 +1,9 @@
 version: "3.8"
 
+# In this Docker Compose example, it assumes that you maintain a reverse proxy externally (or chose not to).
+# The only two exposed ports here are from minio (:9000) and the app itself (:3000).
+# If these ports are changed, ensure that the env vars passed to the app are also changed accordingly.
+
 services:
   # Database (Postgres)
   postgres:
@@ -23,7 +27,7 @@ services:
     restart: unless-stopped
     command: server /data --address :"9001"
     ports:
-      - ${MINIO_PORT:-9001}:9001
+      - 9001:9001
     volumes:
       - minio_data:/data
     environment:
@@ -36,8 +40,8 @@ services:
     restart: unless-stopped
     environment:
       TOKEN: ${CHROME_TOKEN}
-      EXIT_ON_HEALTH_FAILURE: 1
-      PRE_REQUEST_HEALTH_CHECK: 1
+      EXIT_ON_HEALTH_FAILURE: true
+      PRE_REQUEST_HEALTH_CHECK: true
 
   # Redis (for cache & server session management)
   redis:
@@ -45,12 +49,11 @@ services:
     restart: unless-stopped
     command: redis-server --requirepass ${REDIS_PASSWORD}
 
-  # Main Application
   app:
     image: amruthpillai/reactive-resume:latest
     restart: unless-stopped
     ports:
-      - ${APP_PORT:-3000}:3000
+      - 3000:3000
     depends_on:
       - postgres
       - minio
@@ -62,8 +65,8 @@ services:
       NODE_ENV: production
 
       # -- URLs --
-      PUBLIC_URL: http://localhost:${APP_PORT:-3000}
-      STORAGE_URL: http://localhost:${MINIO_PORT:-9001}
+      PUBLIC_URL: http://localhost:3000
+      STORAGE_URL: http://localhost:9001
 
       # -- Printer (Chrome) --
       CHROME_TOKEN: ${CHROME_TOKEN}
@@ -76,8 +79,7 @@ services:
       ACCESS_TOKEN_SECRET: ${ACCESS_TOKEN_SECRET}
       REFRESH_TOKEN_SECRET: ${REFRESH_TOKEN_SECRET}
 
-      # -- Emails --
-      MAIL_FROM: noreply@localhost
+      
 
       # -- Storage (Minio) --
       STORAGE_ENDPOINT: minio
@@ -85,11 +87,13 @@ services:
       STORAGE_BUCKET: default
       STORAGE_ACCESS_KEY: ${MINIO_ROOT_USER}
       STORAGE_SECRET_KEY: ${MINIO_ROOT_PASSWORD}
-      STORAGE_USE_SSL: 0
+      STORAGE_USE_SSL: false
 
       # -- Cache (Redis) --
       REDIS_URL: redis://default:${REDIS_PASSWORD}@redis:6379
 
+
+
 volumes:
-  postgres_data:
   minio_data:
+  postgres_data:
