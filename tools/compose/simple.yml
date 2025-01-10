@@ -21,9 +21,9 @@ services:
   minio:
     image: minio/minio
     restart: unless-stopped
-    command: server /data
+    command: server /data --address :"9001"
     ports:
-      - ${MINIO_PORT:-9000}:9000
+      - ${MINIO_PORT:-9001}:9001
     volumes:
       - minio_data:/data
     environment:
@@ -63,7 +63,7 @@ services:
 
       # -- URLs --
       PUBLIC_URL: http://localhost:${APP_PORT:-3000}
-      STORAGE_URL: http://localhost:${MINIO_PORT:-9000}
+      STORAGE_URL: http://localhost:${MINIO_PORT:-9001}
 
       # -- Printer (Chrome) --
       CHROME_TOKEN: ${CHROME_TOKEN}
@@ -81,7 +81,7 @@ services:
 
       # -- Storage (Minio) --
       STORAGE_ENDPOINT: minio
-      STORAGE_PORT: ${MINIO_PORT:-9000}
+      STORAGE_PORT: ${MINIO_PORT:-9001}
       STORAGE_BUCKET: default
       STORAGE_ACCESS_KEY: ${MINIO_ROOT_USER}
       STORAGE_SECRET_KEY: ${MINIO_ROOT_PASSWORD}
