@@ -1,47 +1,67 @@
-ARG NX_CLOUD_ACCESS_TOKEN
+# Base stage for shared dependencies
+FROM node:18-alpine AS base
 
-# --- Base Image ---
-FROM node:lts-bullseye-slim AS base
-ARG NX_CLOUD_ACCESS_TOKEN
+# Install system dependencies
+RUN apk add --no-cache \
+    chromium \
+    nss \
+    freetype \
+    freetype-dev \
+    harfbuzz \
+    ca-certificates \
+    ttf-freefont \
+    nodejs \
+    yarn
 
-ENV PNPM_HOME="/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
+# Install MinIO client
+RUN wget https://dl.min.io/client/mc/release/linux-amd64/mc && \
+    chmod +x mc && \
+    mv mc /usr/local/bin/
 
-RUN corepack enable pnpm && corepack prepare pnpm --activate
+# Development stage
+FROM base AS development
 
 WORKDIR /app
 
-# --- Build Image ---
-FROM base AS build
-ARG NX_CLOUD_ACCESS_TOKEN
-
-COPY .npmrc package.json pnpm-lock.yaml ./
-COPY ./tools/prisma /app/tools/prisma
-RUN pnpm install --frozen-lockfile
+COPY package*.json ./
+RUN npm install
 
 COPY . .
 
-ENV NX_CLOUD_ACCESS_TOKEN=$NX_CLOUD_ACCESS_TOKEN
+# Production build stage
+FROM base AS builder
 
-RUN pnpm run build
+WORKDIR /app
 
-# --- Release Image ---
-FROM base AS release
-ARG NX_CLOUD_ACCESS_TOKEN
+COPY package*.json ./
+RUN npm ci
 
-RUN apt update && apt install -y dumb-init --no-install-recommends && rm -rf /var/lib/apt/lists/*
+COPY . .
+RUN npm run build
 
-COPY --chown=node:node --from=build /app/.npmrc /app/package.json /app/pnpm-lock.yaml ./
-RUN pnpm install --prod --frozen-lockfile
+# Production stage
+FROM base AS production
 
-COPY --chown=node:node --from=build /app/dist ./dist
-COPY --chown=node:node --from=build /app/tools/prisma ./tools/prisma
-RUN pnpm run prisma:generate
+WORKDIR /app
 
-ENV TZ=UTC
-ENV PORT=3000
-ENV NODE_ENV=production
+# Copy built assets
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/node_modules ./node_modules
 
-EXPOSE 3000
+# Environment variables for MinIO
+ENV MINIO_ROOT_USER=minioadmin \
+    MINIO_ROOT_PASSWORD=minioadmin \
+    MINIO_PORT=9000 \
+    MINIO_CONSOLE_PORT=9001
 
-CMD [ "dumb-init", "pnpm", "run", "start" ]
+# Create data directory for MinIO
+RUN mkdir -p /data
+
+# Add startup script
+COPY docker-entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
+EXPOSE 3000 9000 9001
+
+ENTRYPOINT ["docker-entrypoint.sh"]
