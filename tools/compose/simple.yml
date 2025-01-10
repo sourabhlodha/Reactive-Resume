@@ -1,6 +1,14 @@
 version: "3.8"
 
 services:
+
+  web:
+    image: nginx:alpine
+    ports:
+      - "8000:80"
+    volumes:
+      - ./app:/usr/share/nginx/html
+
   # Database (Postgres)
   postgres:
     image: postgres:15-alpine
