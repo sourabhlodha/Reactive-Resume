@@ -53,7 +53,11 @@ services:
 
   # Main Application
   app:
-    image: amruthpillai/reactive-resume:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - NX_CLOUD_ACCESS_TOKEN=${NX_CLOUD_ACCESS_TOKEN}
     restart: unless-stopped
     ports:
       - ${APP_PORT:-3000}:3000
