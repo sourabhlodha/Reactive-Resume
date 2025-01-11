@@ -44,7 +44,7 @@ fly.toml
 stats.html
 
 # Environment Variables
-*.env*
+#*.env*
 !.env.example
 
 # Lingui Compiled Messages
