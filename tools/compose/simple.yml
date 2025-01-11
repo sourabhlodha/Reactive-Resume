@@ -74,8 +74,8 @@ services:
       NODE_ENV: production
 
       # -- URLs --
-      PUBLIC_URL: http://localhost:${APP_PORT:-3000}
-      STORAGE_URL: http://localhost:${MINIO_PORT:-9000}/default
+      PUBLIC_URL: ${PUBLIC_URL}
+      STORAGE_URL: ${STORAGE_URL}
 
       # -- Printer (Chrome) --
       CHROME_TOKEN: ${CHROME_TOKEN}
