@@ -14,11 +14,21 @@ Text: """{input}"""
 
 Revised Text: """`;
 
-const PROMPTJD = `You are an expert AI writing assistant specializing in crafting compelling and professional job descriptions. Your task is to create a detailed Job Description profile from the minimal data provided
+const PROMPTJD = `Create a detailed job description based on the following input: {input}. Use the information provided to craft a comprehensive job posting. Include the following sections:
 
-Text: """{input}"""
-
-Revised Text: ""`;
+Job Title: Derive the job title from the input summary. Add any relevant keywords if necessary.
+Location: Mention the location or specify if the role is remote.
+Job Type: Indicate whether the position is full-time, part-time, or contract.
+Experience Level: Define the level of experience required (e.g., Junior, Mid, Senior, or specific years of experience).
+About Us: Write a brief and engaging company overview, focusing on the industry, mission, and company culture.
+Job Summary: Summarize the role’s main responsibilities and its impact within the organization.
+Key Responsibilities: List the specific tasks and duties aligned with the role described in the input summary.
+Requirements: Outline the technical skills, tools, and qualifications essential for the role.
+Nice to Have: Include any additional skills or experiences that would be beneficial but not mandatory.
+What We Offer: Highlight the benefits, perks, and professional growth opportunities available.
+How to Apply: Provide clear instructions for submitting an application, including any required documents.
+Equal Opportunity Statement: Add a commitment to diversity and inclusion.
+Make the tone professional yet approachable and tailor the content to attract candidates who are passionate about the role.`;
 
 export const improveWriting = async (text: string) => {
   const prompt = PROMPT.replace("{input}", text);
