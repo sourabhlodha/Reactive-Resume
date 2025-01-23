@@ -19,6 +19,8 @@ PUBLIC_URL=http://24.144.68.235:8000
 <br/>
 STORAGE_URL=http://24.144.68.235:9000/default 
 <br/>
+or run below command
+sed -i "s|PUBLIC_URL=http://127.0.0.1:8000|PUBLIC_URL=http://24.144.68.235:8000|g; s|STORAGE_URL=http://127.0.0.1:9000/default|STORAGE_URL=http://24.144.68.235:9000/default|g" .env
 
 where 24.144.68.235 is your server's Public IP address
 
